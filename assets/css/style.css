@@ -968,7 +968,7 @@ span.theme {
 
 .platform-links-inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 40px;
     height: 68px;
