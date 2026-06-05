@@ -288,7 +288,7 @@ span.theme {
 }
 
 .bg_dark {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-tertiary);
 }
 
 .text_white {
@@ -1289,3 +1289,176 @@ span.theme {
 }
 
 /* Home Slot Reviews CSS End */
+
+/* Home Walkthrough CSS Start */
+.walkthroughs-section {
+    background-image: url('../images/home_walkthrough_image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0 0 0/40%);
+    background-blend-mode: multiply;
+}
+
+.walkthroughs-section .overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 50vh;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+}
+
+.walkthrough-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.walkthrough-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.walkthrough-card:hover {
+    transform: translateY(-5px);
+}
+
+.walkthrough-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.walkthrough-card h3 {
+    font-size: 0.95rem;
+    padding: 15px;
+    margin: 0;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+/* Home Walkthrough CSS End */
+
+
+/*Home Featured Cards CSS Start */
+
+.featured_card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.1s all linear;
+}
+
+.featured_card:hover {
+    transform: translateY(-3px);
+}
+
+.featured_card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    border-radius: 1.875rem;
+}
+
+.featured_card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    border-radius: 1.875rem;
+}
+
+.featured_card:hover::after {
+    transform: scaleX(1);
+}
+
+.featured_card_img_outer {
+    height: 21.875rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.875rem;
+}
+
+.featured_card_img {
+    height: 100%;
+    width: 100%;
+}
+
+.featured_card_content {
+    padding: 1.25rem 0;
+}
+
+.featured_card_content h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.featured_card:hover .featured_card_content h5 {
+    color: var(--accent);
+}
+
+.common_overlay .overlay_box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: rgba(193, 190, 39, 0.3);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.common_overlay .box1 {
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.common_overlay .box2 {
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}
+
+.common_overlay .box3 {
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 100%);
+}
+
+.common_overlay .box4 {
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 100%);
+}
+
+.common_overlay:hover .overlay_box {
+    transform: translate(0, 0);
+}
+
+/*Home Featured Cards CSS End */
