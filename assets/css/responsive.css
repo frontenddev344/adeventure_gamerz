@@ -3,6 +3,13 @@
     html {
         font-size: 15px;
     }
+    .custom-news-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+      .grid-item-featured {
+        grid-column: span 1;
+      }
 
 }
 
@@ -32,6 +39,7 @@
     .hero-card-graphic {
         order: -1;
         margin-bottom: 20px;
+        display: none;
     }
 
     .hero-pill-scroll-wrapper {
@@ -59,6 +67,31 @@
         -ms-overflow-style: none;  
         scrollbar-width: none;  
       }
+      .platform-scroll-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 16px;
+    }
+
+    .platform-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .platform-scroll-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .platform-links-inner {
+        justify-content: flex-start;
+        width: max-content;
+        gap: 60px;
+        padding-right: 16px;
+    }
+
+    .platform-item {
+        flex-shrink: 0;
+    }
 }
 
 
@@ -68,13 +101,22 @@
     html {
         font-size: 14px;
     }
-
+    .custom-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .custom-news-card {
+        min-height: 15rem;
+      }
 }
 
 @media screen and (max-width:575px) {
     .notch-svg-wrapper {
         display: none;
     }
+    .custom-news-grid {
+        grid-template-columns: 1fr;
+      }
 }
 
 @media screen and (max-width:480px) {}

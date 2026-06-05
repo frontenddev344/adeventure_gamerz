@@ -15,22 +15,22 @@
     --surface-active: #2a4450;
 
     /* Cards (exclusive green usage) */
-    --card: #1B2A24;
-    --card-hover: #22352D;
-    --card-elevated: #293E35;
+    --card: #1a292d;
+    --card-hover: #22353a;
+    --card-elevated: #2a4046;
 
     /* Borders */
-    --border: #2a3940;
-    --border-light: #364b54;
-    --border-strong: #49616b;
+    --border: #32434b;
+    --border-light: #435862;
+    --border-strong: #5b7480;
 
     /* Brand Colors */
     --primary: #c1be27;
     --primary-hover: #d3d03c;
     --primary-active: #a9a720;
-    --white:#fff;
+    --white: #fff;
 
-    --secondary: #94a3b8;
+    --secondary: #a0acb2;
     --secondary-hover: #a8b5c7;
     --secondary-active: #7f91a7;
 
@@ -52,14 +52,16 @@
     --input-placeholder: #64748b;
 
     /* Ratings */
-    --rating-masterpiece: #d9b66b;
-    --rating-excellent: #68b26b;
-    --rating-good: #8fa68e;
-    --rating-average: #c29b5d;
-    --rating-poor: #cf6a5f;
+    --rating-masterpiece: #d8c76f;
+    --rating-excellent: #8db67f;
+    --rating-good: #7f9b8c;
+    --rating-average: #b9985f;
+    --rating-poor: #b96a5f;
 
     /* Gradients */
-    --gradient-hero: linear-gradient( 135deg, #111c22 0%, #17252d 50%, #213640 100% ); --gradient-gold: linear-gradient( 135deg, #c1be27 0%, #d8d547 100% ); --gradient-forest: linear-gradient( 135deg, #1B2A24 0%, #293E35 100% );
+    --gradient-hero: linear-gradient(135deg, #111c22 0%, #17252d 50%, #213640 100%);
+    --gradient-gold: linear-gradient(135deg, #c1be27 0%, #d8d547 100%);
+    --gradient-forest: linear-gradient(135deg, #1B2A24 0%, #293E35 100%);
 
     /* Shadows */
     --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -71,6 +73,7 @@
     --font-heading: "Google Sans", sans-serif;
     --font-body: "Raleway", sans-serif;
 }
+
 /* Global CSS Start */
 html {
     font-size: 1rem;
@@ -101,7 +104,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family:var(--font-heading);
+    font-family: var(--font-heading);
     margin: 0;
     line-height: 1;
 }
@@ -274,9 +277,10 @@ img {
 
 /* Section Heading CSS Start */
 .section_heading {
-    color: var(--text-primary);
-    font-size: 3rem;
+    color: var(--accent);
+    font-size: 2.5rem;
     line-height: 1.2;
+    font-weight: 500;
 }
 
 span.theme {
@@ -302,40 +306,39 @@ span.theme {
 /* Section Heading CSS End */
 
 /* Header CSS Start */
-/* --- Core Configurations --- */
 .site-header {
     background-color: var(--bg-primary);
     border-bottom: 1px solid var(--border);
     width: 100%;
     position: relative;
     z-index: 100;
-  }
-  
-  .nav-container {
+}
+
+.nav-container {
     max-width: 1440px;
     margin: 0 auto;
     height: 85px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     position: relative;
     width: 100%;
-  }
-  
-  .desktop-nav {
+}
+
+.desktop-nav {
     display: flex;
     gap: 32px;
     align-items: center;
-  }
-  
-  .nav-item-wrapper {
+}
+
+.nav-item-wrapper {
     position: relative;
     height: 85px;
     display: flex;
     align-items: center;
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 1.1rem;
@@ -344,24 +347,23 @@ span.theme {
     transition: color 0.2s ease;
     cursor: pointer;
 }
-  
-  .nav-item:hover,
-  .nav-item-wrapper:hover .nav-item {
+
+.nav-item:hover,
+.nav-item-wrapper:hover .nav-item {
     color: var(--accent-hover);
-  }
-  
-  .brand-logo img {
+}
+
+.brand-logo img {
     display: block;
     max-height: 50px;
     height: auto;
     object-fit: contain;
-  }
-  
-  /* --- High Visibility Image Triggers --- */
-  .menu-toggle {
+}
+
+.menu-toggle {
     background: none;
     border: none;
-    color: var(--text-primary); 
+    color: var(--text-primary);
     font-size: 20px;
     cursor: pointer;
     display: none;
@@ -372,75 +374,75 @@ span.theme {
     border-radius: 50%;
     flex-shrink: 0;
     transition: color 0.2s ease, background-color 0.2s ease;
-  }
-  
-  .menu-toggle:hover {
+}
+
+.menu-toggle:hover {
     color: var(--accent-hover);
     background-color: var(--surface-hover);
-  }
-  
-  .search-toggle-btn {
+}
+
+.search-toggle-btn {
     background: none;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 44px;  
+    width: 44px;
     height: 44px;
     border-radius: 50%;
     flex-shrink: 0;
     transition: background-color 0.2s ease;
     position: relative;
     z-index: 5;
-  }
-  
-  .search-toggle-btn img {
+}
+
+.search-toggle-btn img {
     height: 20px;
     width: 20px;
     object-fit: contain;
-  }
-  /* --- Desktop Mega Menu Dropdown --- */
-  .mega-menu-dropdown {
+}
+
+.mega-menu-dropdown {
     position: fixed;
     top: 85px;
     left: 0;
     width: 100vw;
-    background-color: var(--bg-secondary); /* Dark green layout background base matching image_b70f43.png */
-    border-bottom: 3px solid var(--accent-hover); /* High visibility golden baseline striping */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    background-color: var(--bg-secondary);
+    border-bottom: 3px solid var(--accent-hover);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
     z-index: 90;
-  }
-  
-  .nav-item-wrapper:hover .mega-menu-dropdown {
+}
+
+.nav-item-wrapper:hover .mega-menu-dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-  }
-  
-  .mega-menu-inner {
+}
+
+.mega-menu-inner {
     max-width: 1440px;
     margin: 0 auto;
     padding: 40px 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 48px;
-  }
-  
-  .mega-column h3 {
+}
+
+.mega-column h3 {
     color: var(--text-primary);
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-  }
-  
-  .mega-column a {
+}
+
+.mega-column a {
     display: block;
     color: var(--text-secondary);
     text-decoration: none;
@@ -448,20 +450,20 @@ span.theme {
     font-weight: 500;
     padding: 10px 0;
     transition: color 0.15s ease;
-  }
-  
-  .mega-column a:hover {
-    color: var(--accent-hover); /* Accent highlight color on selection */
-  }
-  
-  /* --- Popular Article Layout Cards --- */
-  .mega-popular {
+}
+
+.mega-column a:hover {
+    color: var(--accent-hover);
+}
+
+
+.mega-popular {
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
-  
-  .popular-card {
+}
+
+.popular-card {
     display: flex;
     background-color: var(--card);
     border: 1px solid var(--border-light);
@@ -470,45 +472,45 @@ span.theme {
     gap: 16px;
     padding: 12px;
     color: var(--text-primary);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, border-color 0.2s ease;
-  }
-  
-  .popular-card:hover {
+}
+
+.popular-card:hover {
     transform: translateY(-2px);
     background-color: var(--card-hover);
     border-color: var(--accent);
-  }
-  
-  .popular-card img {
+}
+
+.popular-card img {
     width: 120px;
     height: 80px;
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
-  }
-  
-  .card-details {
+}
+
+.card-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .card-details h4 {
+}
+
+.card-details h4 {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.4;
     color: var(--text-primary);
-  }
-  
-  .card-details span {
+}
+
+.card-details span {
     font-size: 11px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
-  }
-  
-  /* --- Deep-Green Search Bar --- */
-  .search-overlay-bar {
+}
+
+
+.search-overlay-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -522,56 +524,56 @@ span.theme {
     transition: opacity 0.2s ease, transform 0.2s ease;
     transform: translateY(-4px);
     z-index: 95;
-  }
-  
-  .search-overlay-bar.active {
+}
+
+.search-overlay-bar.active {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
-  }
-  
-  .search-bar-inner {
+}
+
+.search-bar-inner {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 24px;
-  }
-  
-  .search-input-wrapper {
+}
+
+.search-input-wrapper {
     position: relative;
     flex: 1;
     display: flex;
     align-items: center;
-  }
-  
-  .search-field-icon {
+}
+
+.search-field-icon {
     position: absolute;
     left: 20px;
     color: rgba(255, 255, 255, 0.4);
     font-size: 16px;
     pointer-events: none;
-  }
-  
-  #searchInput {
+}
+
+#searchInput {
     width: 100%;
     height: 46px;
     background-color: var(--bg-primary);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px; 
+    border-radius: 30px;
     padding: 0 20px 0 52px;
     font-size: 15px;
     color: var(--text-primary);
     outline: none;
     transition: border-color 0.2s ease;
-  }
-  
-  #searchInput:focus {
-    border-color: var(--accent-hover); 
-  }
-  
-  .search-cancel-btn {
+}
+
+#searchInput:focus {
+    border-color: var(--accent-hover);
+}
+
+.search-cancel-btn {
     background: none;
     border: none;
     color: var(--text-secondary);
@@ -579,33 +581,33 @@ span.theme {
     font-weight: 600;
     cursor: pointer;
     transition: color 0.2s ease;
-  }
-  
-  .search-cancel-btn:hover {
+}
+
+.search-cancel-btn:hover {
     color: var(--accent-hover);
-  }
-  
-  /* --- Mobile Sliding Panel Structural Engine --- */
-  .mobile-menu-overlay {
+}
+
+
+.mobile-menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--bg-primary); /* Dark forest green backdrop container */
+    background-color: var(--bg-primary);
     z-index: 200;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
     overflow: hidden;
-  }
-  
-  .mobile-menu-overlay.active {
+}
+
+.mobile-menu-overlay.active {
     opacity: 1;
     pointer-events: auto;
-  }
-  
-  .mobile-panel-view {
+}
+
+.mobile-panel-view {
     position: absolute;
     top: 0;
     left: 0;
@@ -616,40 +618,40 @@ span.theme {
     transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--bg-primary);
-  }
-  
-  .mobile-panel-view.active {
+}
+
+.mobile-panel-view.active {
     transform: translateX(0);
-  }
-  
-  .mobile-panel-view.shifted-left {
+}
+
+.mobile-panel-view.shifted-left {
     transform: translateX(-100%);
-  }
-  
-  .mobile-menu-header {
+}
+
+.mobile-menu-header {
     height: 70px;
-    border-bottom: 2px solid var(--accent-hover); 
+    border-bottom: 2px solid var(--accent-hover);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
     background-color: var(--bg-secondary);
-  }
-  
-  .sub-panel-header {
-    background-color: var(--bg-secondary); 
+}
+
+.sub-panel-header {
+    background-color: var(--bg-secondary);
     justify-content: flex-start;
     color: var(--accent);
     padding: 0;
     border-bottom: none;
-  }
-  
-  .panel-back-btn {
+}
+
+.panel-back-btn {
     width: 100%;
     height: 100%;
     background: none;
     border: none;
-    color: #000000; /* Contrast black font rendering on top of gold header strips */
+    color: #000000;
     font-size: 18px;
     font-weight: 700;
     display: flex;
@@ -658,9 +660,9 @@ span.theme {
     padding: 0 24px;
     cursor: pointer;
     text-align: left;
-  }
-  
-  .menu-close-btn {
+}
+
+.menu-close-btn {
     background: none;
     border: none;
     color: var(--text-primary);
@@ -671,23 +673,23 @@ span.theme {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .menu-close-btn:hover {
+}
+
+.menu-close-btn:hover {
     color: var(--accent-hover);
-  }
-  
-  .mobile-menu-logo img {
+}
+
+.mobile-menu-logo img {
     max-height: 38px;
-  }
-  
-  .mobile-nav-links {
+}
+
+.mobile-nav-links {
     display: flex;
     flex-direction: column;
     padding: 8px 0;
-  }
-  
-  .mobile-link {
+}
+
+.mobile-link {
     background: none;
     border: none;
     color: var(--text-primary);
@@ -701,103 +703,103 @@ span.theme {
     text-align: left;
     width: 100%;
     cursor: pointer;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     transition: color 0.2s ease, background-color 0.2s ease;
-  }
-  .mobile-link:hover {
+}
+
+.mobile-link:hover {
     color: var(--accent-hover);
     background-color: var(--bg-secondary);
-  }
-  .mobile-link span i {
+}
+
+.mobile-link span i {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.4);
     transition: color 0.2s ease;
-  }
-  
-  .mobile-link:hover span i {
+}
+
+.mobile-link:hover span i {
     color: var(--accent-hover, #E3C37D);
-  }
-  /* --- Mobile Submenu Lists & Inner Cards --- */
-  .mobile-panel-scroll-content {
+}
+
+.mobile-panel-scroll-content {
     flex: 1;
     overflow-y: auto;
     padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 32px;
-  }
-  
-  .mobile-sub-section h3 {
+}
+
+.mobile-sub-section h3 {
     font-size: 22px;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 12px;
-  }
-  
-  .mobile-sub-section a {
+}
+
+.mobile-sub-section a {
     display: block;
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     transition: color 0.15s ease;
-  }
-  
-  .mobile-sub-section a:hover {
+}
+
+.mobile-sub-section a:hover {
     color: var(--accent-hover);
-  }
-  
-  .mobile-sub-section .popular-card {
+}
+
+.mobile-sub-section .popular-card {
     margin-top: 16px;
-  }
-  /* Container to maintain standard touch targets for custom links */
-  .mobile-arrow-wrapper {
+}
+
+.mobile-arrow-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 24px;
     height: 24px;
-  }
-  
-  .mobile-nav-arrow {
+}
+
+.mobile-nav-arrow {
     width: 14px;
     height: 14px;
     object-fit: contain;
     opacity: 0.6;
     transition: opacity 0.2s ease, filter 0.2s ease;
-  }
-  
-  .mobile-link:hover .mobile-nav-arrow {
+}
+
+.mobile-link:hover .mobile-nav-arrow {
     opacity: 1;
-    filter: sepia(100%) saturate(300%) hue-rotate(5deg); 
-  }
-  
-  /* Hard constraints for the navigation forward-arrow graphic layout */
-  .mobile-nav-arrow {
+    filter: sepia(100%) saturate(300%) hue-rotate(5deg);
+}
+
+.mobile-nav-arrow {
     width: 14px;
     height: 14px;
     object-fit: contain;
-    opacity: 0.6; /* Matches the muted contrast styling from image_b70ba2.png */
+    opacity: 0.6;
     transition: opacity 0.2s ease, filter 0.2s ease;
-  }
-  
-  .mobile-link:hover .mobile-nav-arrow {
+}
+
+.mobile-link:hover .mobile-nav-arrow {
     opacity: 1;
-  }
-  
-  /* Explicit scaling constraints for the golden subpanel back-button graphic */
-  .mobile-back-arrow {
+}
+
+
+.mobile-back-arrow {
     width: 16px;
     height: 16px;
     object-fit: contain;
     display: inline-block;
     flex-shrink: 0;
-  }
-  
-  /* Balanced styling tweak to ensure clean horizontal gap tracking */
-  .panel-back-btn {
+}
+
+.panel-back-btn {
     width: 100%;
     height: 100%;
     background: none;
@@ -807,28 +809,30 @@ span.theme {
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     padding: 0 24px;
     cursor: pointer;
     text-align: left;
-  }
+}
+
+/* Header CSS End */
 
 
 /* Banner CSS Start */
 .hero-banner-section {
     width: 100%;
-    background-color: #435856; 
+    background-color: #435856;
     padding: 60px 0 80px 00;
     position: relative;
     overflow: hidden;
-  }
-  
-  .hero-container {
+}
+
+.hero-container {
     position: relative;
     z-index: 5;
-  }
+}
 
-  .hero-map-card {
+.hero-map-card {
     width: 100%;
     min-height: 30rem;
     background-image: url('../images/home_banner.png');
@@ -845,44 +849,44 @@ span.theme {
     background-color: rgba(0 0 0/50%);
     background-blend-mode: multiply;
 }
-  
 
-  .notch-svg-wrapper {
+
+.notch-svg-wrapper {
     position: absolute;
-    z-index: 4; 
-    pointer-events: none; 
-  }
-  
-  .notch-svg-wrapper.top-right-step {
+    z-index: 4;
+    pointer-events: none;
+}
+
+.notch-svg-wrapper.top-right-step {
     top: -1px;
     right: -1px;
-  }
-  
-  .notch-svg-wrapper.bottom-left-step {
+}
+
+.notch-svg-wrapper.bottom-left-step {
     bottom: -1px;
     left: -1px;
-  }
-  
+}
 
-  .hero-card-content {
+
+.hero-card-content {
     position: relative;
     z-index: 10;
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
-  
-  .hero-title {
+}
+
+.hero-title {
     font-family: system-ui, -apple-system, sans-serif;
-    color:var(--white);
+    color: var(--white);
     font-size: 3rem;
     font-weight: 500;
     line-height: 1;
     letter-spacing: -0.02em;
     margin: 0;
-  }
-  
-  .hero-description {
+}
+
+.hero-description {
     font-family: system-ui, -apple-system, sans-serif;
     color: var(--white);
     font-size: 15px;
@@ -890,43 +894,45 @@ span.theme {
     line-height: 1.6;
     max-width: 650px;
     margin: 0;
-  }
-  
+}
 
-  .hero-card-graphic {
+
+.hero-card-graphic {
     position: relative;
     z-index: 10;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .floating-hat-image {
+}
+
+.floating-hat-image {
     max-width: 230px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.35));
     transform: translateY(-5px);
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-  }
-  
-  .hero-map-card:hover .floating-hat-image {
+}
+
+.hero-map-card:hover .floating-hat-image {
     transform: translateY(-12px) scale(1.03);
-  }
-  
-  .hero-pill-scroll-wrapper {
+}
+
+.hero-pill-scroll-wrapper {
     position: absolute;
-    bottom: -58px; 
+    bottom: -58px;
     left: 0;
     z-index: 20;
-    max-width: calc(100% - 80px); /* Prevents the strip from running off edge tracks */
-  }
-  .hero-pill-navigation {
+    max-width: calc(100% - 80px);
+}
+
+.hero-pill-navigation {
     display: flex;
     gap: 10px;
-  }
-  .nav-pill {
+}
+
+.nav-pill {
     background-color: #ffffff;
     color: #1e2b25;
     text-decoration: none;
@@ -938,14 +944,348 @@ span.theme {
     align-items: center;
     gap: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    white-space: nowrap; /* CRITICAL: Prevents the text inside the pills from wrapping onto two lines */
+    white-space: nowrap;
     transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-  
-  .nav-pill:hover {
+}
+
+.nav-pill:hover {
     background-color: var(--accent);
     color: #000000;
     transform: translateY(-2px);
-  }
-  
-  
+}
+
+/* Banner CSS End */
+
+
+/* Below Navbar CSS Start */
+.platform-nav-section {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 40;
+}
+
+.platform-links-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 68px;
+}
+
+.platform-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    padding: 8px 4px;
+    transition: transform 0.2s ease;
+}
+
+.platform-svg-box {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-svg-box svg {
+    width: 100%;
+    height: 100%;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.platform-item span {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+
+.platform-item:hover {
+    transform: translateY(-1px);
+}
+
+.platform-item:hover .platform-svg-box svg,
+.platform-item.active .platform-svg-box svg {
+    color: var(--accent);
+}
+
+.platform-item:hover span,
+.platform-item.active span {
+    color: var(--text-primary);
+}
+
+/* Below Navbar CSS End */
+
+/* Home Latest News CSS Start  */
+
+.news-section {
+    background-color: var(--bg-primary);
+    background-image: linear-gradient(rgba(17, 28, 34, 0.85), rgba(17, 28, 34, 0.85)), url('image_a8781c.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Header Element Styles */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.more-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.more-link:hover {
+    color: var(--primary-hover);
+}
+
+.custom-news-grid {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item-featured {
+    grid-column: span 2;
+}
+
+
+.custom-news-card {
+    position: relative;
+    height: 100%;
+    min-height: 17.5rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-news-card:hover {
+    background-color: var(--card-hover);
+    border-color: var(--border-light);
+    box-shadow: var(--shadow-md);
+}
+
+.card-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: scale(1.01);
+    opacity: 0.65;
+}
+
+.custom-news-card:hover .card-bg-img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+.card-content-overlay {
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: linear-gradient(180deg,
+            rgba(26, 41, 45, 0) 0%,
+            rgba(26, 41, 45, 0.75) 40%,
+            rgba(17, 28, 34, 0.95) 100%);
+}
+
+/* Card Typography */
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-title a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.card-title a:hover {
+    color: var(--primary-hover);
+}
+
+.featured-title {
+    font-size: 1.125rem;
+}
+
+.main-card-link {
+    text-decoration: underline !important;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.custom-tag {
+    display: inline-block;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.688rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-light);
+    border-radius: 0.25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+}
+
+.author-name {
+    color: var(--text-secondary);
+    max-width: 6.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-date {
+    color: var(--text-muted);
+}
+
+/* Home Latest News CSS End  */
+
+/* Home Slot Reviews CSS Start */
+.slot-reviews-section {
+    color: var(--text-primary);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.slot-reviews-section .more-link {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.slot-reviews-section .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.slot-reviews-section .card {
+    min-height: 500px;
+    background-color: var(--card);
+    background-image: linear-gradient(to top, rgba(23, 37, 45, 0.95), rgba(23, 37, 45, 0.4)), url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--border);
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.slot-reviews-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background-image: linear-gradient(to top, rgba(23, 37, 45, 0.9), rgba(23, 37, 45, 0.2)), url('path/to/your/image.jpg');
+}
+
+.slot-reviews-section .card .badge {
+    background: var(--primary);
+    color: var(--text-inverse);
+    padding: 5px 8px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-flex;
+    margin-bottom: 10px;
+    max-width: 50px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.slot-reviews-section .card h3 {
+    font-family: var(--font-heading);
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    color: var(--white);
+    margin-top: auto;
+}
+
+.slot-reviews-section .rating {
+    color: var(--rating-excellent);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.slot-reviews-section .card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+/* Home Slot Reviews CSS End */
