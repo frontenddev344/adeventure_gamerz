@@ -1,0 +1,80 @@
+@media screen and (max-width:1199px) {
+
+    html {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-container {
+        height: 70px;
+    }
+
+    .brand-logo img {
+        max-height: 42px;
+    }
+
+    .hero-map-card {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+    }
+
+
+    .hero-card-graphic {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .hero-pill-scroll-wrapper {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 24px;
+        
+         overflow-x: auto; 
+        -webkit-overflow-scrolling: touch;        
+      }
+    
+      .hero-pill-navigation {
+        display: flex;
+        flex-wrap: nowrap; 
+        width: max-content; 
+      }
+    
+      .hero-pill-scroll-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      .hero-pill-scroll-wrapper {
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+      }
+}
+
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .notch-svg-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {}

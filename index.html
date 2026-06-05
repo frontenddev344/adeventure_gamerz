@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.1">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="nav-container">
+
+                <button class="menu-toggle" id="menuOpenBtn" aria-label="Open Menu">
+                    <img src="./assets/images/menu.png" alt="menu_btn">
+                </button>
+
+                <nav class="desktop-nav nav-left">
+                    <a href="#" class="nav-item">News</a>
+                    <a href="#" class="nav-item">Reviews</a>
+                    <a href="#" class="nav-item">Articles</a>
+                    <a href="#" class="nav-item">Walkthroughs</a>
+                </nav>
+
+                <div class="brand-logo">
+                    <a href="#">
+                        <img src="./assets/images/logo.png" alt=" Logo">
+                    </a>
+                </div>
+
+                <nav class="desktop-nav nav-right">
+
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-item">Casino Games</a>
+                        <div class="mega-menu-dropdown">
+                            <div class="mega-menu-inner">
+                                <div class="mega-column">
+                                    <h3>Guides</h3>
+                                    <a href="#">Free Slots</a>
+                                    <a href="#">Online Casino Apps</a>
+                                    <a href="#">Online Casino Bonuses</a>
+                                    <a href="#">Online Slots</a>
+                                    <a href="#">Online Pokies</a>
+                                </div>
+                                <div class="mega-column">
+                                    <h3>Types</h3>
+                                    <a href="#">Aviator Casinos</a>
+                                    <a href="#">Craps Casinos</a>
+                                    <a href="#">Crash Casinos</a>
+                                    <a href="#">Fish Game Casinos</a>
+                                    <a href="#">Plinko Casinos</a>
+                                </div>
+                                <div class="mega-column mega-popular">
+                                    <h3>Popular</h3>
+                                    <div class="popular-card">
+                                        <img src="https://placehold.co/120x80/2d4138/f5f5f4?text=Bonus"
+                                            alt="Popular Post Thumbnail">
+                                        <div class="card-details">
+                                            <h4>Best No Deposit Bonus Casinos & Offers in 2026</h4>
+                                            <span>Jovan Mile... / 15/06/2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="popular-card">
+                                        <img src="https://placehold.co/120x80/2d4138/f5f5f4?text=KYC"
+                                            alt="Popular Post Thumbnail">
+                                        <div class="card-details">
+                                            <h4>Best No KYC Casinos in 2026 - No ID Verification</h4>
+                                            <span>Jovan Mile... / 09/10/2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-item">Slot Games</a>
+                        <div class="mega-menu-dropdown">
+                            <div class="mega-menu-inner">
+                                <div class="mega-column">
+                                    <h3>Guides</h3>
+                                    <a href="#">Classic Slots</a>
+                                    <a href="#">Video Slots</a>
+                                    <a href="#">Progressive Jackpots</a>
+                                    <a href="#">3D Slots Layout</a>
+                                </div>
+                                <div class="mega-column">
+                                    <h3>Types</h3>
+                                    <a href="#">High RTP Slots</a>
+                                    <a href="#">Penny Slots</a>
+                                    <a href="#">Megaways System</a>
+                                    <a href="#">Fruit Machines</a>
+                                </div>
+                                <div class="mega-column mega-popular">
+                                    <h3>Popular</h3>
+                                    <div class="popular-card">
+                                        <img src="https://placehold.co/120x80/2d4138/f5f5f4?text=Slots"
+                                            alt="Popular Post Thumbnail">
+                                        <div class="card-details">
+                                            <h4>Top High Volatility Slots with Best Payout Mechanics</h4>
+                                            <span>Jovan Mile... / 22/04/2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-item">About Us</a>
+                </nav>
+
+                <button class="search-toggle-btn" id="searchExpandBtn" aria-label="Open Search">
+                    <img src="./assets/images/search.png" alt="search_icon">
+                </button>
+
+                <div class="search-overlay-bar" id="searchBarContainer">
+                    <div class="search-bar-inner">
+                        <div class="search-input-wrapper">
+                            <i class="fa-solid fa-magnifying-glass search-field-icon"></i>
+                            <input type="text" id="searchInput" placeholder="Search your Adventure Game..."
+                                autocomplete="off">
+                        </div>
+                        <button class="search-cancel-btn" id="searchCancelBtn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-panel-view active" id="mobileMainPanel">
+            <div class="mobile-menu-header">
+                <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close Menu">
+                    <img src="./assets/images/close.png" alt="close_btn">
+                </button>
+                <div class="mobile-menu-logo">
+                    <img src="https://placehold.co/120x36/101a16/7fa68b?text=ADVENTURE+GAMERS"
+                        alt="Adventure Gamers Logo">
+                </div>
+                <button class="search-toggle-btn" id="mobileSearchBtn" aria-label="Open Search">
+                    <img src="./assets/images/search.png" alt="search_icon">
+                </button>
+            </div>
+
+            <nav class="mobile-nav-links">
+                <a href="#" class="mobile-link">News</a>
+                <a href="#" class="mobile-link">Reviews</a>
+                <a href="#" class="mobile-link">Articles</a>
+                <a href="#" class="mobile-link">Walkthroughs</a>
+
+                <button type="button" class="mobile-link dynamic-trigger" data-target="mobileCasinoMenu">
+                    Casino Games
+                    <span class="mobile-arrow-wrapper">
+                        <img src="./assets/images/dropdown.png" class="mobile-nav-arrow" alt="arrow_right">
+                    </span>
+                </button>
+                <button type="button" class="mobile-link dynamic-trigger" data-target="mobileSlotsMenu">
+                    Slot Games
+                    <span class="mobile-arrow-wrapper">
+                        <img src="./assets/images/dropdown.png" class="mobile-nav-arrow" alt="arrow_right">
+                    </span>
+                </button>
+
+                <a href="#" class="mobile-link">About</a>
+            </nav>
+        </div>
+
+        <div class="mobile-panel-view" id="mobileCasinoMenu">
+            <div class="mobile-menu-header sub-panel-header">
+
+                <button type="button" class="panel-back-btn">
+                    <img src="./assets/images/back_arrow.png" class="mobile-back-arrow" alt="arrow_left"> Casino Games
+                </button>
+            </div>
+            <div class="mobile-panel-scroll-content">
+                <div class="mobile-sub-section">
+                    <h3>Guides</h3>
+                    <a href="#">Free Slots</a>
+                    <a href="#">Online Casino Apps</a>
+                    <a href="#">Online Casino Bonuses</a>
+                    <a href="#">Online Slots</a>
+                    <a href="#">Online Pokies</a>
+                </div>
+                <div class="mobile-sub-section">
+                    <h3>Types</h3>
+                    <a href="#">Aviator Casinos</a>
+                    <a href="#">Craps Casinos</a>
+                    <a href="#">Crash Casinos</a>
+                    <a href="#">Fish Game Casinos</a>
+                    <a href="#">Plinko Casinos</a>
+                </div>
+                <div class="mobile-sub-section">
+                    <h3>Popular</h3>
+                    <div class="popular-card">
+                        <img src="https://placehold.co/120x80/2d4138/f5f5f4?text=Bonus" alt="Popular Post Thumbnail">
+                        <div class="card-details">
+                            <h4>Best No Deposit Bonus Casinos & Offers in 2026</h4>
+                            <span>Jovan Mile... / 15/06/2025</span>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="https://placehold.co/120x80/2d4138/f5f5f4?text=KYC" alt="Popular Post Thumbnail">
+                        <div class="card-details">
+                            <h4>Best No KYC Casinos in 2026 - No ID Verification</h4>
+                            <span>Jovan Mile... / 09/10/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-panel-view" id="mobileSlotsMenu">
+            <div class="mobile-menu-header sub-panel-header">
+                <button type="button" class="panel-back-btn">
+                    <img src="./assets/images/arrow-left.png" class="mobile-back-arrow" alt="arrow_left"> Slot Games
+                </button>
+            </div>
+            <div class="mobile-panel-scroll-content">
+                <div class="mobile-sub-section">
+                    <h3>Guides</h3>
+                    <a href="#">Classic Slots</a>
+                    <a href="#">Video Slots</a>
+                    <a href="#">Progressive Jackpots</a>
+                    <a href="#">3D Slots Layout</a>
+                </div>
+                <div class="mobile-sub-section">
+                    <h3>Types</h3>
+                    <a href="#">High RTP Slots</a>
+                    <a href="#">Penny Slots</a>
+                    <a href="#">Megaways System</a>
+                    <a href="#">Fruit Machines</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="hero-banner-section">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-map-card">
+                    <div class="notch-svg-wrapper top-right-step">
+                        <svg width="140" height="60" viewBox="0 0 107 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 0H107V45C107 43.1 107.52 33.34 90.5 33.72H35C25.49 33.72 17.75 26.4 17.51 17.29L17.5 16.42C17.26 7.31 9.52 0 0 0Z"
+                                fill="#435856"></path>
+                        </svg>
+                    </div>
+                    <div class="notch-svg-wrapper bottom-left-step">
+                        <svg width="140" height="60" viewBox="0 0 107 46" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 0V46H107C97.35 46 89.6 38.52 89.36 29.21L89.35 28.32C89.11 19.01 81.37 11.53 71.85 11.53H16.37C-0.65 11.92 0 1.94 0 0Z"
+                                fill="#435856"></path>
+                        </svg>
+                    </div>
+                    <div class="hero-card-content">
+                        <h1 class="hero-title">Your Ultimate Guide to <span class="theme">Adventure & Strategy Gaming</span></h1>
+                        <p class="hero-description">
+                            GameTrail is the go-to destination for passionate gamers seeking honest reviews, deep-dive walkthroughs, and the latest news across all platforms. From classic puzzle adventures to cutting-edge narrative experiences — we cover it all, so you play smarter.
+                        </p>
+                    </div>
+                    <div class="hero-card-graphic">
+                        <img src="./assets/images/pith-hat.png" alt="Adventure Gamers Pith Hat"
+                            class="floating-hat-image">
+                    </div>
+                </div>
+
+
+                <div class="hero-pill-scroll-wrapper">
+                    <div class="hero-pill-navigation">
+                        <a href="#" class="nav-pill">
+                            <i class="fa-solid fa-bullhorn"></i> News
+                        </a>
+                        <a href="#" class="nav-pill">
+                            <i class="fa-solid fa-sparkles"></i> Game Reviews
+                        </a>
+                        <a href="#" class="nav-pill">
+                            <i class="fa-solid fa-circle-info"></i> Casino Guides
+                        </a>
+                        <a href="#" class="nav-pill">
+                            <i class="fa-solid fa-shoe-prints"></i> Game Walkthroughs
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>
