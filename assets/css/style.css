@@ -2748,6 +2748,9 @@ video {
     padding: 0 12px;
     width: 100%;
 }
+.actions select{
+    width:auto;
+}
 .review_filters_wrapper button#clear {
     background: var(--accent);
     padding: 10px 20px;
