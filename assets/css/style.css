@@ -2774,8 +2774,8 @@ video {
     margin: 20px 0;
 }
 .alphabet button.active {
-    background: #2e7d32;
-    color: white;
+    background: var(--accent-hover);
+    color: var(--bg-primary);
     border-radius: 6px;
 }
 .alphabet button {
