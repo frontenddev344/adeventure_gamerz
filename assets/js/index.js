@@ -129,3 +129,20 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Home Videos JS  End
+
+// News Filter JS Start
+function filterCards(category, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+
+  document.querySelectorAll('.news_card').forEach(card => {
+      if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+      } else {
+          card.style.display = 'none';
+      }
+  });
+}
+
+// News Filter JS End
