@@ -430,42 +430,37 @@
     <!-- Review Content Section Start -->
     <section class="review_content_sec">
         <div class="container">
-
             <h1 class="section_heading mb-5">Games Database</h1>
-
-
-
-            <div id="alphabet" class="alphabet"></div>
-            <div class="filters-grid">
-
-                <select id="genre-filter">
-                    <option value="">Genre</option>
-                </select>
-
-                <select id="theme-filter">
-                    <option value="">Theme</option>
-                </select>
-
-                <select id="perspective-filter">
-                    <option value="">Perspective</option>
-                </select>
-
-                <select id="gameplay-filter">
-                    <option value="">Gameplay</option>
-                </select>
-
-                <select id="platform-filter">
-                    <option value="">Platform</option>
-                </select>
-
-                <select id="control-filter">
-                    <option value="">Control</option>
-                </select>
-
-                <select id="style-filter">
-                    <option value="">Style</option>
-                </select>
-
+            <div class="review_filters_wrapper">
+                <div id="alphabet" class="alphabet"></div>
+                <div class="filters-grid">
+                    <select id="genre-filter">
+                        <option value="">Genre</option>
+                    </select>
+                    <select id="theme-filter">
+                        <option value="">Theme</option>
+                    </select>
+                    <select id="perspective-filter">
+                        <option value="">Perspective</option>
+                    </select>
+                    <select id="gameplay-filter">
+                        <option value="">Gameplay</option>
+                    </select>
+                    <select id="platform-filter">
+                        <option value="">Platform</option>
+                    </select>
+                    <select id="control-filter">
+                        <option value="">Control</option>
+                    </select>
+                    <select id="style-filter">
+                        <option value="">Style</option>
+                    </select>
+                </div>
+                <div class="clear_filter_btn_div">
+                    <button id="clear" class="review_clear_butn">
+                        Clear Filters
+                    </button>
+                </div>             
             </div>
 
             <div class="actions">
@@ -476,17 +471,12 @@
                     <option value="old">Oldest</option>
                 </select>
 
-                <button id="clear">
+                <!-- <button id="clear" class="review_clear_butn">
                     Clear Filters
-                </button>
+                </button> -->
             </div>
-
-            <!-- <div id="count"></div> -->
-
             <div id="grid" class="grid"></div>
-
             <div id="pagination"></div>
-
         </div>
     </section>
     <!-- Review Content Section End -->

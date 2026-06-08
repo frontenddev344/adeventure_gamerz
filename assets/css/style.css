@@ -2724,17 +2724,16 @@ video {
 
 
 /* Review Page CSS Start */
-.container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 30px;
-}
-
 .filters-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 15px;
     margin: 20px 0;
+}
+.review_filters_wrapper {
+    box-shadow:var(--border-strong) 0px 8px 24px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
 }
 
 .filters-grid select  , .actions select{
@@ -2743,7 +2742,22 @@ video {
     border-radius: 8px;
     padding: 0 12px;
 }
-
+.review_filters_wrapper button#clear {
+    background: var(--accent);
+    padding: 10px 20px;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.1s all ease-in-out;
+}
+.review_filters_wrapper button#clear:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+}
+.clear_filter_btn_div {
+    text-align: center;
+}
 .alphabet {
     display: flex;
     flex-wrap: wrap;
@@ -2765,7 +2779,8 @@ video {
 .actions {
     display: flex;
     gap: 15px;
-    margin: 20px 0;
+    margin: 50px 0;
+    justify-content: flex-end;
 }
 
 .review_content_sec .grid {

@@ -111,7 +111,6 @@ function initFilters() {
 }
 
 function bindEvents() {
-
     const search = document.getElementById("search");
     const sort = document.getElementById("sort");
     const clear = document.getElementById("clear");
@@ -134,10 +133,11 @@ function bindEvents() {
 
     if (clear) {
         clear.addEventListener("click", () => {
-
+            // 1. Reset JavaScript global state object
             state.page = 1;
             state.search = "";
             state.letter = "ALL";
+            state.sort = "az"; // Explicitly reset state sort back to default
 
             state.platform = [];
             state.genre = [];
@@ -147,12 +147,20 @@ function bindEvents() {
             state.control = [];
             state.style = [];
 
-            document.querySelectorAll("select")
-                .forEach(s => s.value = "");
+            // 2. Reset category dropdown visuals Safely
+            const filterDropdowns = document.querySelectorAll(".filters-grid select");
+            filterDropdowns.forEach(s => s.value = "");
 
+            // 3. Reset sort dropdown visual to default option match
+            if (sort) {
+                sort.value = "az";
+            }
+
+            // 4. Reset input checkboxes if you have any
             document.querySelectorAll("input[type='checkbox']")
                 .forEach(c => c.checked = false);
 
+            // 5. Update layout view completely
             updateUI();
         });
     }
