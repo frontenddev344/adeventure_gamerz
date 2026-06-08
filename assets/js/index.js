@@ -63,3 +63,69 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Header JS End
+
+// Tabs JS Start
+const tabs = document.querySelectorAll(".tab");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+        // Remove active class from tabs
+        tabs.forEach(item => item.classList.remove("active"));
+
+        // Hide all contents
+        tabContents.forEach(content =>
+            content.classList.remove("active")
+        );
+
+        // Activate current tab
+        tab.classList.add("active");
+
+        // Show matching content
+        const target = document.getElementById(
+            tab.dataset.tab
+        );
+
+        target.classList.add("active");
+    });
+});
+// Tabs JS End
+
+// Home Videos JS  Start
+const modal = document.getElementById("videoModal");
+const player = document.getElementById("videoPlayer");
+const closeBtn = document.getElementById("closeModal");
+
+document.querySelectorAll(".video-trigger").forEach(el => {
+
+    el.addEventListener("click", () => {
+
+        const src = el.dataset.video;
+
+        player.src = src;
+        modal.classList.add("active");
+
+        player.play();
+    });
+
+});
+
+function closeModal() {
+    player.pause();
+    player.currentTime = 0;
+    player.src = "";
+    modal.classList.remove("active");
+}
+
+closeBtn.onclick = closeModal;
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+});
+
+// Home Videos JS  End
