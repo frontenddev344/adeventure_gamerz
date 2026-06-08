@@ -2128,8 +2128,11 @@ video {
 .home_about_stats_sec {
     position: relative;
     overflow: hidden;
-    padding: 6.25rem 0;
-    background: var(--bg-secondary);
+    background-blend-mode: multiply;
+    background: rgba(0 0 0/75%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home_about_stats_sec::before {
@@ -2741,6 +2744,7 @@ video {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 0 12px;
+    width: 100%;
 }
 .review_filters_wrapper button#clear {
     background: var(--accent);

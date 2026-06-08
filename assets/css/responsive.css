@@ -95,6 +95,9 @@
     .platform-item {
         flex-shrink: 0;
     }
+    .filters-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 
@@ -198,6 +201,9 @@
 
     .footer-features .feature-item {
         justify-content: flex-start;
+    }
+    .filters-grid {
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
