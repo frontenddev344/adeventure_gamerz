@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css?v=1.1">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Bunny</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -18,13 +18,14 @@
     <header class="site-header">
         <div class="container">
             <div class="nav-container">
+
                 <button class="menu-toggle" id="menuOpenBtn" aria-label="Open Menu">
                     <img src="./assets/images/menu.png" alt="menu_btn">
                 </button>
 
                 <nav class="desktop-nav nav-left">
                     <a href="./news" class="nav-item">News</a>
-                    <a href="./reviews" class="nav-item active">Reviews</a>
+                    <a href="./reviews" class="nav-item">Reviews</a>
                     <a href="./articles" class="nav-item">Articles</a>
                     <a href="./walkthroughs" class="nav-item">Walkthroughs</a>
                 </nav>
@@ -150,7 +151,7 @@
 
             <nav class="mobile-nav-links">
                 <a href="./news" class="mobile-link">News</a>
-                <a href="./reviews" class="mobile-link active">Reviews</a>
+                <a href="./reviews" class="mobile-link">Reviews</a>
                 <a href="articles" class="mobile-link">Articles</a>
                 <a href="walkthroughs" class="mobile-link">Walkthroughs</a>
 
@@ -240,7 +241,11 @@
     </div>
     <!-- Header End -->
 
-    <!-- Banner Start -->
+    <div class="container mt-4">
+        <div id="meta-container" class="article-meta-header">
+        </div>
+    </div>
+
     <section class="hero-banner-section sub_banner">
         <div class="container">
             <div class="hero-container">
@@ -253,7 +258,7 @@
                                 fill="#000"></path>
                         </svg>
                     </div>
-                    <div class="notch-svg-wrapper bottom-left-step ">
+                    <div class="notch-svg-wrapper bottom-left-step">
                         <svg width="140" height="60" viewBox="0 0 107 46" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -261,31 +266,32 @@
                                 fill="#000"></path>
                         </svg>
                     </div>
-                    <div class="hero-card-content">
+
+                    <div class="hero-card-content hide-on-details">
                         <h1 class="hero-title"></h1>
-                        <p class="hero-description hide-on-details">...</p>
                     </div>
 
                     <div class="hero-card-graphic hide-on-details">
-                        <img src="./assets/images/pith-hat.png" ...>
+                        <img src="./assets/images/pith-hat.png" alt="hat">
                     </div>
                 </div>
 
                 <div class="hero-pill-scroll-wrapper hide-on-details">
-                    <div class="hero-pill-navigation">...</div>
+                    <div class="hero-pill-navigation"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Banner End -->
 
-    <!-- Page Details Start -->
-    <section class="bg_dark py-7">
+    <main class="news_content">
         <div class="container">
-            <div class="details-wrapper" id="details-container"></div>
+            <h1 id="page-main-title" class="article-main-title mb-4"></h1>
+            <div id="article-body-container" class="article-body"></div>
+            <div id="data-footer-container" class="pt-2 "></div>
         </div>
-    </section>
-    <!-- Page Details End -->
+    </main>
+
+
 
     <!-- Footer Start -->
     <footer class="site-footer pt-5">
@@ -353,6 +359,7 @@
     <script src="./assets/js/filters-data.js"></script>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/details-logic.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/render.js"></script>
     <script src="./assets/js/filters.js"></script>
     <script src="./assets/js/pagination.js"></script>

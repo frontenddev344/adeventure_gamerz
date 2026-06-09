@@ -162,98 +162,39 @@ function random(arr) {
     ];
 }
 
-
 const news_articles = [
     {
-        category: "guide",
-        categoryLabel: "Game Guide",
+        slug: "reputation-system-roadrush-5",
         title: "How the Reputation System Shapes Your Gameplay in RoadRush Legends 5",
-        author: "Alex Turner",
-        date: "04/06/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "Everything Coming to Shadow Wasteland From July to October Updates",
-        author: "Priya Mehta",
-        date: "02/06/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "How to Clear Inventory Space by Trading Vehicles in RoadRush Legends 5",
-        author: "Alex Turner",
-        date: "01/06/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "guide",
+        image: "./assets/images/roadrush-banner.jpg",
         categoryLabel: "Game Guide",
-        title: "Mega Strike Soccer Showdown Launches Wild Card Mode With 8,000x Max Win",
         author: "Alex Turner",
-        date: "29/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "Here's Exactly How Long It Takes to Finish Echo of the Forgotten Vale",
-        author: "Alex Turner",
-        date: "29/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "guide",
-        categoryLabel: "Game Guide",
-        title: "Looking for a Shortcut? Here Are All the Vault Codes in Agent Zero: First Strike",
-        author: "Alex Turner",
-        date: "28/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "Meet the Voice Cast Behind Agent Zero: First Strike and the Characters They Play",
-        author: "Alex Turner",
-        date: "27/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "guide",
-        categoryLabel: "Game Guide",
-        title: "How Many Missions Does Agent Zero: First Strike Have? Full Mission List Inside",
-        author: "Alex Turner",
-        date: "27/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "Ready to Dive In? Here Are the Global Launch Times for Agent Zero: First Strike",
-        author: "Alex Turner",
-        date: "26/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "Thunder Axe 3 Launches With Expanded Loot Tiers and New Bonus Rounds",
-        author: "Alex Turner",
-        date: "26/05/2026",
-        image: "./assets/images/home_stats_image.png"
-    },
-    {
-        category: "news",
-        categoryLabel: "News",
-        title: "StormForge Studios Brings Zeus’s Fury Back in Olympus Reborn III",
-        author: "Alex Turner",
-        date: "22/05/2026",
-        image: "./assets/images/home_stats_image.png"
+        date: "04 June 2026",
+        readTime: "3 min",
+        platform: "PC, Xbox",
+        intro: "RoadRush Legends 5 is not just about speed — it rewards how you race, not just whether you win. The reputation system tracks your every move and shapes your entire gameplay experience from career mode to online lobbies.",
+        content: `
+            <h2>What Is the Reputation System?</h2>
+            <p>It is a live scoring mechanism that monitors your racing conduct, community standing, and career prestige. Every clean lap, fair overtake, and completed race adds to your score — while collisions, rage quits, and unsportsmanlike behaviour bring it down fast.</p>
+            <h2>What Reputation Unlocks</h2>
+            <p>Your rank determines what you can access: Street Rookie, Circuit Racer, Road Legend, Track Master, and Racing Icon. Higher ranks unlock elite events, sponsors, and legendary vehicles.</p>
+        `,
+        quickTips: [
+            "Finish every race — even last place beats quitting",
+            "Prioritise clean laps over aggressive overtakes",
+            "Accept rival challenges whenever they appear",
+            "Hit sponsor objectives every race",
+            "Rate other players fairly — it comes back to you"
+        ],
+        recoveryContent: `
+            <h2>Lost Reputation? You Can Recover</h2>
+            <p>String together clean races for a Redemption Streak bonus, finish three consecutive top-three results for a Comeback Boost, and watch for Reputation Weekend events where all points earned are doubled.</p>
+            <div class="article-conclusion">
+                <strong>Bottom line:</strong> In RoadRush Legends 5, how you race matters just as much as where you finish. Protect your reputation and the game opens up in ways that make every session more rewarding.
+            </div>
+        `
     }
 ];
-
 // For Dummy Data
 
 // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
