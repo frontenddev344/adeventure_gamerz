@@ -7,7 +7,13 @@ const games = [
         year: 2012,
         platform: ["Freeware", "PC"],
         genre: ["Mystery Adventure", "Indie"],
-        image: "assets/images/home_walkthrough_image.png",
+        description: "A strange spirit has transformed Julian into the world’s first were-bunny. Trapped inside a surreal world filled with eerie landscapes and mysterious creatures, players must use intelligence and unique were-bunny abilities to uncover secrets and find a way back to normal life.\nBunny focuses heavily on atmospheric storytelling, exploration, and puzzle-solving rather than fast-paced action. Its hand-drawn environments and dark fantasy art style create a dreamlike experience that stands out among indie adventure games.",
+        features: [
+            "Story-driven mystery adventure",
+            "Unique were-bunny transformation mechanics",
+            "Hand-crafted dark fantasy environments"
+        ],
+        closingNote: "The game’s strange world design and emotional atmosphere make it a memorable experience for players who enjoy narrative-heavy indie adventures."
     },
 
     {

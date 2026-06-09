@@ -3013,3 +3013,134 @@ video {
 }
 
 /* News Page CSS End */
+
+/* Review Detail Page CSS Start */
+.details-hero {
+    padding: 80px 0;
+    background: var(--gradient-dark);
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.details-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+.details-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.details-title {
+    font-family: var(--font-heading);
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.details-meta {
+    margin: 20px 0;
+}
+
+.details-section-title {
+    color: var(--secondary);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hide-on-banner {
+    display: none !important;
+}
+
+.hide-on-details {
+    display: none !important;
+}
+
+.hero-title {
+    margin: 0;
+    text-align: center;
+}
+
+
+.hero-banner-section.sub_banner {
+    padding: 40px 0;
+    position: relative;
+    overflow: visible;
+}
+
+.hero-banner-section.sub_banner .hero-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: left;
+}
+.hide-on-details {
+    display: none !important;
+}
+.hero-banner-section.sub_banner .notch-svg-wrapper {
+    position: absolute;
+    z-index: 5;
+}
+
+.hero-banner-section.sub_banner .top-right-step {
+    top: 0;
+    right: 0;
+}
+
+.hero-banner-section.sub_banner .bottom-left-step {
+    bottom: 0;
+    left: 0;
+}
+.hero-banner-section.sub_banner .hero-map-card {
+    position: relative;
+    height: 100%;
+    min-height: 20rem;
+    max-height: 30rem;;
+}
+.details-wrapper {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+.details-wrapper ul li::marker{
+color:var(--accent-hover);
+}
+
+.game-meta {
+    margin-bottom: 20px;
+}
+
+.game-meta p {
+    margin: 5px 0;
+}
+
+.game-description {
+    margin: 20px 0;
+}
+
+.key-features h3 {
+    margin-bottom: 10px;
+}
+
+.key-features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Review Detail Page CSS End */
