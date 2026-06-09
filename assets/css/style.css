@@ -3133,6 +3133,8 @@ div#data-footer-container h2 {
     font-size: 2rem;
     margin: 0;
     text-align: left;
+    font-weight: 400;
+    line-height: 1.3;
 }
 .hide-on-details {
     display: none !important;
@@ -3732,16 +3734,10 @@ color:var(--accent-hover);
 .article-detail-page__container {
     margin: 0 auto;
 }
-
-/* SECTIONS */
-
 .article-detail-page__intro,
 .article-detail-page__section {
     margin-bottom: 3rem;
 }
-
-/* TEXT */
-
 .article-detail-page p {
     color: var(--text-secondary);
     font-family: var(--font-body);
@@ -3749,9 +3745,6 @@ color:var(--accent-hover);
     line-height: 1.9;
     margin-bottom: 1.25rem;
 }
-
-/* HEADINGS */
-
 .article-detail-page__heading {
     position: relative;
 
@@ -3761,9 +3754,8 @@ color:var(--accent-hover);
 
     font-family: var(--font-heading);
     font-size: clamp(1.5rem, 2vw, 2rem);
-    font-weight: 500;
+    font-weight: 400;
 }
-
 .article-detail-page__heading::before {
     content: "";
 
@@ -3788,7 +3780,6 @@ color:var(--accent-hover);
     font-weight: 600;
 }
 
-/* HIGHLIGHT BOX */
 
 .article-detail-page__highlight {
     margin-bottom: 3rem;
@@ -3808,7 +3799,6 @@ color:var(--accent-hover);
     font-weight: 500;
 }
 
-/* LIST */
 
 .article-detail-page__list {
     list-style: none;
@@ -3838,7 +3828,6 @@ color:var(--accent-hover);
     background: var(--primary);
 }
 
-/* GAMES GRID */
 
 .article-detail-page__games {
     display: grid;
@@ -3876,8 +3865,6 @@ color:var(--accent-hover);
     font-size: .95rem;
 }
 
-/* INFO CARDS */
-
 .article-detail-page__info-card {
     margin-top: 2rem;
 
@@ -3906,7 +3893,90 @@ color:var(--accent-hover);
 .article-detail-page__info-card strong {
     color: var(--primary);
 }
+/* Top Lists / Rankings */
 
+.article-detail-page__ranking-item {
+    margin-bottom: 3rem;
+}
+
+.article-detail-page__ranking-item:last-child {
+    margin-bottom: 0;
+}
+
+.article-detail-page__ranking-title {
+    position: relative;
+
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+
+    color: var(--text-primary);
+
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    font-weight: 500;
+}
+
+.article-detail-page__ranking-title::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    width: 4px;
+    height: calc(100% - 10px);
+
+    border-radius: 999px;
+
+    background: var(--primary);
+}
+
+.article-detail-page__ranking-number {
+    color: var(--primary);
+    margin-right: .35rem;
+}
+
+.article-detail-page__ranking-item h3 {
+    color: var(--text-primary);
+    font-size: 1.15rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.article-detail-page__ranking-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 2rem;
+}
+
+.article-detail-page__ranking-item ul li {
+    position: relative;
+
+    padding-left: 1.5rem;
+    margin-bottom: .85rem;
+
+    color: var(--text-secondary);
+}
+
+.article-detail-page__ranking-item ul li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .article-detail-page__ranking-title {
+        font-size: 1.4rem;
+    }
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
