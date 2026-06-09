@@ -61,7 +61,7 @@ const games = [
     },
 
     {
-        title: "~airwave~: I Fought the Law, and the Law One",
+        title: "Airwave~: I Fought the Law, and the Law One",
         year: 2011,
         platform: ["Freeware", "PC"],
         genre: ["Indie Adventure", "Narrative Exploration"],
