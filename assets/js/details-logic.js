@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="key-features mb-4">
                         <h4 class="mb-3">Key Features</h4>
                         <ul class="list-unstyled">
-                            ${game.features.map(f => `<li class="mb-2">• ${f}</li>`).join('')}
+                            ${game.features.map(f => `<li class="mb-2"> ${f}</li>`).join('')}
                         </ul>
                     </div>
                 ` : ""}

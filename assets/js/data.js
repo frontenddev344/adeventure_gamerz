@@ -170,17 +170,88 @@ const news_articles = [
         title: "How the Reputation System Shapes Your Gameplay in RoadRush Legends 5",
         author: "Alex Turner",
         date: "04/06/2026",
-        image: "assets/images/home_walkthrough_image.png"
+        image: "./assets/images/home_stats_image.png"
     },
     {
         category: "news",
         categoryLabel: "News",
         title: "Everything Coming to Shadow Wasteland From July to October Updates",
+        author: "Priya Mehta",
+        date: "02/06/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "news",
+        categoryLabel: "News",
+        title: "How to Clear Inventory Space by Trading Vehicles in RoadRush Legends 5",
         author: "Alex Turner",
-        date: "04/06/2026",
-        image: "assets/images/home_walkthrough_image.png"
+        date: "01/06/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "guide",
+        categoryLabel: "Game Guide",
+        title: "Mega Strike Soccer Showdown Launches Wild Card Mode With 8,000x Max Win",
+        author: "Alex Turner",
+        date: "29/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "news",
+        categoryLabel: "News",
+        title: "Here's Exactly How Long It Takes to Finish Echo of the Forgotten Vale",
+        author: "Alex Turner",
+        date: "29/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "guide",
+        categoryLabel: "Game Guide",
+        title: "Looking for a Shortcut? Here Are All the Vault Codes in Agent Zero: First Strike",
+        author: "Alex Turner",
+        date: "28/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "news",
+        categoryLabel: "News",
+        title: "Meet the Voice Cast Behind Agent Zero: First Strike and the Characters They Play",
+        author: "Alex Turner",
+        date: "27/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "guide",
+        categoryLabel: "Game Guide",
+        title: "How Many Missions Does Agent Zero: First Strike Have? Full Mission List Inside",
+        author: "Alex Turner",
+        date: "27/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "news",
+        categoryLabel: "News",
+        title: "Ready to Dive In? Here Are the Global Launch Times for Agent Zero: First Strike",
+        author: "Alex Turner",
+        date: "26/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "news",
+        categoryLabel: "News",
+        title: "Thunder Axe 3 Launches With Expanded Loot Tiers and New Bonus Rounds",
+        author: "Alex Turner",
+        date: "26/05/2026",
+        image: "./assets/images/home_stats_image.png"
+    },
+    {
+        category: "news",
+        categoryLabel: "News",
+        title: "StormForge Studios Brings Zeus’s Fury Back in Olympus Reborn III",
+        author: "Alex Turner",
+        date: "22/05/2026",
+        image: "./assets/images/home_stats_image.png"
     }
-
 ];
 
 // For Dummy Data
