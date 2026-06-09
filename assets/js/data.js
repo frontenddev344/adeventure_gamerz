@@ -13,6 +13,7 @@ const games = [
             "Unique were-bunny transformation mechanics",
             "Hand-crafted dark fantasy environments"
         ],
+         image: "assets/images/home_walkthrough_image.png",
         closingNote: "The game’s strange world design and emotional atmosphere make it a memorable experience for players who enjoy narrative-heavy indie adventures."
     },
 
