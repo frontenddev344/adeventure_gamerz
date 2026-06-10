@@ -39,7 +39,7 @@
                             <div class="mega-menu-inner">
                                 <div class="mega-column">
                                     <h3>Guides</h3>
-                                     <a href="casino-games">Free Slots</a>
+                                    <a href="casino-games">Free Slots</a>
                                     <a href="#">Online Casino Apps</a>
                                     <a href="#">Online Casino Bonuses</a>
                                     <a href="#">Online Slots</a>
@@ -173,7 +173,7 @@
             <div class="mobile-panel-scroll-content">
                 <div class="mobile-sub-section">
                     <h3>Guides</h3>
-                     <a href="casino-games">Free Slots</a>
+                    <a href="casino-games">Free Slots</a>
                     <a href="#">Online Casino Apps</a>
                     <a href="#">Online Casino Bonuses</a>
                     <a href="#">Online Slots</a>
@@ -295,7 +295,7 @@
     <section class="casino_games_section py-7 bg_dark">
         <div class="container">
             <h1 class="section_heading mb-4">Our Slot Collection</h1>
-            <input type="text" id="searchInput" class="casino_games_search" placeholder="Search games...">
+            <input type="text" id="casinoSearchInput" class="casino_games_search" placeholder="Search games...">
 
             <div class="casino_games_grid" id="gameGrid">
                 <div class="casino_games_card" data-name="joker's revenge">
@@ -454,21 +454,29 @@
 
     <script src="./assets/js/jquery.js"></script>
     <script>
-        const searchInput = document.getElementById('searchInput');
-        const cards = document.querySelectorAll('.casino_games_card');
-    
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            
-            cards.forEach(card => {
-                const name = card.getAttribute('data-name').toLowerCase();
-                
-                          if (name.includes(query)) {
-                    card.style.display = "flex"; 
-                } else {
-                    card.style.display = "none"; 
-                }
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const searchInput = document.getElementById('casinoSearchInput');
+            const cards = document.querySelectorAll('.casino_games_card');
+
+            searchInput.addEventListener('input', function () {
+
+                const query = this.value.toLowerCase().trim();
+
+                cards.forEach(card => {
+
+                    const name = card.dataset.name.toLowerCase();
+
+                    if (name.includes(query)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+
+                });
+
             });
+
         });
     </script>
     <script src="./assets/js/aos.js"></script>
