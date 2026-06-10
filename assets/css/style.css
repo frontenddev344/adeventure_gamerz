@@ -2791,14 +2791,26 @@ video {
 .alphabet button.active {
     background: var(--accent-hover);
     color: var(--bg-primary);
-    border-radius: 6px;
 }
+
 
 .alphabet button {
     border: none;
     background: white;
     padding: 8px 12px;
     cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.1s all ease-in-out;
+}
+.alphabet button:hover {
+     background: var(--accent-hover);
+}
+.alphabet button:first-child {
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
 }
 
 .actions {
