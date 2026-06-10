@@ -1037,10 +1037,10 @@ span.theme {
 
 .platform-item {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 10px;
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -1092,8 +1092,6 @@ span.theme {
 /* Home Latest News CSS Start  */
 
 .news-section {
-    background-color: var(--bg-primary);
-    background-image: linear-gradient(rgba(17, 28, 34, 0.85), rgba(17, 28, 34, 0.85)), url('image_a8781c.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1695,7 +1693,11 @@ span.theme {
     z-index: 2;
     padding: 1rem;
 }
-
+.game-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0 0 0/40%);
+}
 .game-content h3 {
     color: var(--white);
     font-family: var(--font-heading);
@@ -3116,7 +3118,7 @@ div#data-footer-container h2 {
 
 .hero-title {
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
