@@ -1079,7 +1079,7 @@ span.theme {
 
 .platform-item:hover .platform-svg-box svg,
 .platform-item.active .platform-svg-box svg {
-    color: var(--accent);
+    fill: var(--accent);
 }
 
 .platform-item:hover span,
