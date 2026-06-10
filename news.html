@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css?v=1.1">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Reviews</title>
+    <title>News</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
                 </button>
 
                 <nav class="desktop-nav nav-left">
-                    <a href="./news" class="nav-item">News</a>
-                    <a href="./reviews" class="nav-item active">Reviews</a>
+                    <a href="./news" class="nav-item active">News</a>
+                    <a href="./reviews" class="nav-item ">Reviews</a>
                     <a href="#" class="nav-item">Articles</a>
                     <a href="#" class="nav-item">Walkthroughs</a>
                 </nav>
@@ -150,8 +150,8 @@
             </div>
 
             <nav class="mobile-nav-links">
-                <a href="./news" class="mobile-link">News</a>
-                <a href="./reviews" class="mobile-link active">Reviews</a>
+                <a href="./news" class="mobile-link active">News</a>
+                <a href="./reviews" class="mobile-link">Reviews</a>
                 <a href="#" class="mobile-link">Articles</a>
                 <a href="#" class="mobile-link">Walkthroughs</a>
 
@@ -484,56 +484,145 @@
     </div>
     <!-- Below Header Navbar End -->
 
-
-    <!-- Review Content Section Start -->
-    <section class="review_content_sec py-7 bg_dark">
+    <!-- News Content Section Start -->
+    <section class="news_articles_sec py-7 bg_dark">
         <div class="container">
-            <h1 class="section_heading mb-5">Games Database</h1>
-            <div class="review_filters_wrapper">
-                <div id="alphabet" class="alphabet"></div>
-                <div class="filters-grid">
-                    <select id="genre-filter">
-                        <option value="">Genre</option>
-                    </select>
-                    <select id="theme-filter">
-                        <option value="">Theme</option>
-                    </select>
-                    <select id="perspective-filter">
-                        <option value="">Perspective</option>
-                    </select>
-                    <select id="gameplay-filter">
-                        <option value="">Gameplay</option>
-                    </select>
-                    <select id="platform-filter">
-                        <option value="">Platform</option>
-                    </select>
-                    <select id="control-filter">
-                        <option value="">Control</option>
-                    </select>
-                    <select id="style-filter">
-                        <option value="">Style</option>
-                    </select>
-                </div>
-                <div class="clear_filter_btn_div">
-                    <button id="clear" class="review_clear_butn">
-                        Clear Filters
-                    </button>
-                </div>             
+            <div class="filter-nav">
+                <button class="tab-btn active" onclick="filterCards('all', this)">All</button>
+                <button class="tab-btn" onclick="filterCards('guide', this)">Game Guide</button>
+                <button class="tab-btn" onclick="filterCards('news', this)">News</button>
             </div>
 
-            <div class="actions">
-                <select id="sort">
-                    <option value="az">A-Z</option>
-                    <option value="za">Z-A</option>
-                    <option value="new">Newest</option>
-                    <option value="old">Oldest</option>
-                </select>            
+            <!-- <div class="news_wrapper">
+                <div class="news_cards">
+                    <div class="news_card guide">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category guide">Game Guide</span>
+                            <h3>How the Reputation System Shapes Your Gameplay in RoadRush Legends 5</h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card news">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category news">News</span>
+                            <h3>Everything Coming to Shadow Wasteland From July to October Updates</h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card mews">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">News</span>
+                            <h3>How to Clear Inventory Space by Trading Vehicles in RoadRush Legends 5 </h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card guide">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Game Guide</span>
+                            <h3>Mega Strike Soccer Showdown Launches Wild Card Mode With 8,000x Max Win </h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card news">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">News</span>
+                            <h3>Here's Exactly How Long It Takes to Finish Echo of the Forgotten Vale</h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card guide">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Game Guide</span>
+                            <h3>Looking for a Shortcut? Here Are All the Vault Codes in Agent Zero: First Strike </h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card news">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Game Guide</span>
+                            <h3>Thunder Axe 3 Launches With Expanded Loot Tiers and New Bonus Rounds</h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card guide">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Game Guide</span>
+                            <h3>Ready to Dive In? Here Are the Global Launch Times for Agent Zero: First Strike </h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_card guide">
+                        <div class="card-img">
+                            <img src="./assets/images/home_stats_image.png" alt="news">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Game Guide</span>
+                            <h3>StormForge Studios Brings Zeus’s Fury Back in Olympus Reborn III </h3>
+                            <div class="card-footer">
+                                <span>Alex Turner</span>
+                                <span>04/06/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> -->
+            <div class="news_wrapper">
+                <div class="news_cards">
+                    </div>
             </div>
-            <div id="grid" class="grid"></div>
-            <div id="pagination"></div>
         </div>
     </section>
-    <!-- Review Content Section End -->
+    <!-- News Content Section End -->
 
     <!-- Footer Start -->
     <footer class="site-footer pt-5">
@@ -549,7 +638,7 @@
                         </h3>
                         <ul>
                             <li><a href="./news">News</a></li>
-                            <li><a href="./reviews.html">Reviews</a></li>
+                            <li><a href="./reviews">Reviews</a></li>
                             <li><a href="#">Articles</a></li>
                             <li><a href="#">Walkthroughs</a></li>
                             <li><a href="#">About US</a></li>
@@ -600,6 +689,7 @@
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/filters-data.js"></script>
     <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/render.js"></script>
     <script src="./assets/js/filters.js"></script>
     <script src="./assets/js/pagination.js"></script>

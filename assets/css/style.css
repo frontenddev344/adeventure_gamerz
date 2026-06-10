@@ -874,7 +874,7 @@ span.theme {
 .hero-banner-section {
     width: 100%;
     background-color: var(--bg-primary);
-    padding: 60px 0 80px 0;
+    padding: 3.75rem 0 5rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -3129,6 +3129,7 @@ div#data-footer-container h2 {
     background-image: none !important; 
     background-color: var(--bg-primary);
 }
+
 
 .hero-banner-section.sub_banner .hero-title {
     color: #ffffff;
