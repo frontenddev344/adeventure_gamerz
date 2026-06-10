@@ -1559,6 +1559,7 @@ span.theme {
 
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    max-width: fit-content;
 }
 
 .tabs::-webkit-scrollbar {
@@ -1620,7 +1621,7 @@ span.theme {
 }
 
 .games-list.active {
-    display: grid; 
+    display: grid;
 }
 
 .game-card {
@@ -4236,13 +4237,13 @@ div#data-footer-container h2 {
     gap: 4rem;
 }
 
-.walkthrough_details_sidebar { 
-    position: sticky; 
-    top: 2rem; 
-    background: var(--bg-secondary); 
-    padding: 2rem; 
+.walkthrough_details_sidebar {
+    position: sticky;
+    top: 2rem;
+    background: var(--bg-secondary);
+    padding: 2rem;
     border-radius: var(--radius-md);
-    border: 1px solid var(--border); 
+    border: 1px solid var(--border);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     align-self: start;
 }
@@ -4256,28 +4257,30 @@ div#data-footer-container h2 {
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.5rem;
 }
+
 .walkthorugh_details_box .highlighted_text {
     border: 1px solid var(--border);
     padding: 0.625rem 1.25rem;
     border-radius: 1rem;
     width: fit-content;
 }
+
 .walkthrough_details_nav_list {
     list-style: none;
     padding: 0;
 }
 
-.walkthrough_details_nav_item a { 
-    color: var(--text-secondary); 
-    text-decoration: none; 
-    display: block; 
-    padding: 0.6rem 0; 
-    font-size: 0.95rem; 
-    transition: all 0.3s ease; 
+.walkthrough_details_nav_item a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: block;
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
 }
 
-.walkthrough_details_nav_item a:hover { 
-    color: var(--primary); 
+.walkthrough_details_nav_item a:hover {
+    color: var(--primary);
     transform: translateX(5px);
 }
 
@@ -4319,7 +4322,7 @@ div#data-footer-container h2 {
 }
 
 @media (max-width: 991px) {
-    .walkthorugh_details_box{
+    .walkthorugh_details_box {
         grid-template-columns: 1fr;
     }
 
@@ -4339,9 +4342,232 @@ div#data-footer-container h2 {
     min-height: 25rem;
     background-color: rgba(0, 0, 0, 0.65)
 }
-.hero-banner-section.sub_banner.category .hero-title{
-color: var(--accent);
-font-size: 2.5rem;
+
+.hero-banner-section.sub_banner.category .hero-title {
+    color: var(--accent);
+    font-size: 2.5rem;
 }
 
 /* Category Pages CSS End */
+
+/* Casino Page CSS Start */
+.casino_page_intro {
+    background: var(--bg-primary);
+}
+
+.casino_page_intro_header {
+    margin-bottom: 2rem;
+}
+
+.casino_page_intro_header h1 {
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.15;
+    margin-bottom: 2rem;
+    max-width: 900px;
+}
+
+.casino_page_intro_meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.casino_page_intro_author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.casino_page_intro_author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+}
+
+.casino_page_intro_author h4 {
+    color: var(--text-primary);
+    margin: 0;
+    font-family: var(--font-heading);
+}
+
+.casino_page_intro_author span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.casino_page_intro_info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.casino_page_intro_updated {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.casino_page_intro_updated strong {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.casino_page_intro_updated span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.casino_page_intro_share_btn {
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    padding: 0.85rem 1.4rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    font-weight: 600;
+}
+
+.casino_page_intro_share_btn:hover {
+    background: var(--primary);
+    color: var(--text-inverse);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.casino_page_intro_card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-md);
+}
+
+.casino_page_intro_card p {
+    color: var(--text-secondary);
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.casino_page_intro_card p:last-child {
+    margin-bottom: 0;
+}
+
+
+.casino_games_search {
+    width: 100%;
+    padding: 16px;
+    background: #0d0d0d;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.casino_games_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.casino_games_card {
+    background: var(--card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: all var(--transition-normal);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.casino_games_card:hover {
+    border-color: var(--primary);
+}
+
+.play-btn-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.card-img-wrapper:hover .play-btn-overlay {
+    opacity: 1;
+}
+
+.play-btn-overlay .play-btn {
+    background: var(--primary);
+    color: var(--text-inverse);
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    height: 2.5rem;
+}
+
+.card-title {
+    padding: 15px 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .casino_page_intro_meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .casino_page_intro_info {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .casino_page_intro_updated {
+        text-align: left;
+    }
+
+    .casino_page_intro_card {
+        padding: 1.5rem;
+    }
+}
+
+/* Casino Page CSS End */
