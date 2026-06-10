@@ -3733,6 +3733,7 @@ color:var(--accent-hover);
 
 .article-detail-page__container {
     margin: 0 auto;
+    max-width: 1150px;
 }
 .article-detail-page__intro,
 .article-detail-page__section {
