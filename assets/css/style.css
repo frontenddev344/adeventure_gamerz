@@ -328,7 +328,7 @@ img {
     color: var(--accent);
     font-size: 2.5rem;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 span.theme {
@@ -1359,7 +1359,7 @@ span.theme {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     padding: 10rem 0;
     position: relative;
@@ -3197,6 +3197,7 @@ div#data-footer-container h2 {
     background-position: center;
 }
 
+
 .details-wrapper {
     /* max-width: 800px; */
     margin: 0 auto;
@@ -4328,3 +4329,15 @@ div#data-footer-container h2 {
 }
 
 /* Walkthorugh Details Page CSS End */
+
+/* Category Pages CSS Start */
+.hero-banner-section.sub_banner.category .hero-map-card {
+    min-height: 25rem;
+    background-color: rgba(0, 0, 0, 0.65)
+}
+.hero-banner-section.sub_banner.category .hero-title{
+color: var(--accent);
+font-size: 2.5rem;
+}
+
+/* Category Pages CSS End */
