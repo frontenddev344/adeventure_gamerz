@@ -219,6 +219,9 @@
     .py-7 {
         padding: 2.8rem 0;
     }
+    .walkthrough_sections_wrap {
+         grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width:480px) {

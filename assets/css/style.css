@@ -565,7 +565,7 @@ span.theme {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:var(--bg-primary);
+    background-color: var(--bg-primary);
     display: flex;
     align-items: center;
     opacity: 0;
@@ -755,9 +755,11 @@ span.theme {
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     transition: color 0.2s ease, background-color 0.2s ease;
 }
+
 .mobile-link.active {
     color: var(--accent-hover);
 }
+
 .mobile-link:hover {
     color: var(--accent-hover);
     background-color: var(--bg-secondary);
@@ -931,7 +933,7 @@ span.theme {
     font-family: var(--font-heading);
     color: var(--text-primary);
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
     letter-spacing: -0.02em;
     margin: 0;
@@ -1651,12 +1653,10 @@ span.theme {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.95),
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.1)
-    );
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.1));
 
     display: flex;
     flex-direction: column;
@@ -1677,6 +1677,7 @@ span.theme {
     opacity: 0.8;
     margin-bottom: 10px;
 }
+
 .card-tags,
 .card-platforms {
     display: flex;
@@ -1693,11 +1694,13 @@ span.theme {
     z-index: 2;
     padding: 1rem;
 }
+
 .game-overlay {
     position: absolute;
     inset: 0;
     background-color: rgba(0 0 0/40%);
 }
+
 .game-content h3 {
     color: var(--white);
     font-family: var(--font-heading);
@@ -2472,7 +2475,7 @@ video {
 .accordion-button {
     background-color: var(--bg-primary) !important;
     box-shadow: none !important;
-    padding:1.25rem !important; 
+    padding: 1.25rem !important;
 }
 
 .accordion-flush>.accordion-item {
@@ -2696,6 +2699,7 @@ video {
     margin-bottom: 1.5rem;
     color: var(--accent-hover);
 }
+
 .ssl_logo {
     height: 3.75rem;
     width: 8.75rem;
@@ -2734,26 +2738,30 @@ video {
 /* Review Page CSS Start */
 .filters-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin: 20px 0;
 }
+
 .review_filters_wrapper {
-    box-shadow:var(--border-strong) 0px 8px 24px;
+    box-shadow: var(--border-strong) 0px 8px 24px;
     padding: 1.25rem;
     border-radius: 1.25rem;
 }
 
-.filters-grid select  , .actions select{
+.filters-grid select,
+.actions select {
     height: 48px;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 0 12px;
     width: 100%;
 }
-.actions select{
-    width:auto;
+
+.actions select {
+    width: auto;
 }
+
 .review_filters_wrapper button#clear {
     background: var(--accent);
     padding: 10px 20px;
@@ -2763,24 +2771,29 @@ video {
     border-radius: 0.5rem;
     transition: 0.1s all ease-in-out;
 }
+
 .review_filters_wrapper button#clear:hover {
     background: var(--accent-hover);
     transform: translateY(-1px);
 }
+
 .clear_filter_btn_div {
     text-align: center;
 }
+
 .alphabet {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin: 20px 0;
 }
+
 .alphabet button.active {
     background: var(--accent-hover);
     color: var(--bg-primary);
     border-radius: 6px;
 }
+
 .alphabet button {
     border: none;
     background: white;
@@ -2798,7 +2811,7 @@ video {
 .review_content_sec .grid {
     display: grid;
     grid-template-columns:
-        repeat(auto-fill,minmax(300px,1fr));
+        repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -2821,11 +2834,9 @@ video {
     inset: 0;
 
     background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,.9),
-            rgba(0,0,0,.1)
-        );
+        linear-gradient(to top,
+            rgba(0, 0, 0, .9),
+            rgba(0, 0, 0, .1));
 
     display: flex;
     flex-direction: column;
@@ -2849,11 +2860,13 @@ video {
     gap: 6px;
     flex-wrap: wrap;
 }
+
 .card-platforms {
     display: inline-flex;
     gap: 5px;
     flex-wrap: wrap;
 }
+
 .pill {
     background: var(--bg-tertiary);
     padding: 4px 8px;
@@ -2901,11 +2914,9 @@ video {
 }
 
 #pagination button.active {
-    background: linear-gradient(
-        135deg,
-        #4caf50,
-        #2e7d32
-    );
+    background: linear-gradient(135deg,
+            #4caf50,
+            #2e7d32);
     color: #fff;
     border-color: #66bb6a;
     box-shadow:
@@ -3021,15 +3032,16 @@ video {
 .news_card_link {
     text-decoration: none;
     color: inherit;
-    display: block; 
+    display: block;
     transition: transform 0.3s ease;
     width: 100%;
 }
 
 .news_card_link:hover .news_card {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 .article-meta-header {
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -3048,15 +3060,18 @@ video {
 .news-details-banner {
     min-height: 350px;
 }
+
 .news_content h1 {
     font-size: 2rem;
     line-height: 1.3;
     color: var(--accent-hover);
 }
+
 div#data-footer-container h2 {
     margin-bottom: 1.25rem;
     font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
+
 /* News Page CSS End */
 
 /* Review Detail Page CSS Start */
@@ -3126,7 +3141,7 @@ div#data-footer-container h2 {
     padding: 40px 0;
     position: relative;
     overflow: visible;
-    background-image: none !important; 
+    background-image: none !important;
     background-color: var(--bg-primary);
 }
 
@@ -3139,9 +3154,11 @@ div#data-footer-container h2 {
     font-weight: 400;
     line-height: 1.3;
 }
+
 .hide-on-details {
     display: none !important;
 }
+
 .hero-banner-section.sub_banner .notch-svg-wrapper {
     position: absolute;
     z-index: 5;
@@ -3156,6 +3173,7 @@ div#data-footer-container h2 {
     bottom: 0;
     left: 0;
 }
+
 .hero-banner-section.sub_banner .hero-map-card {
     position: relative;
     height: 100%;
@@ -3164,14 +3182,16 @@ div#data-footer-container h2 {
     background-size: cover;
     background-position: center;
 }
+
 .details-wrapper {
     /* max-width: 800px; */
     margin: 0 auto;
     padding: 0 20px;
     line-height: 1.6;
 }
-.details-wrapper ul li::marker{
-color:var(--accent-hover);
+
+.details-wrapper ul li::marker {
+    color: var(--accent-hover);
 }
 
 .game-meta {
@@ -3353,11 +3373,9 @@ color:var(--accent-hover);
 
     padding: 24px;
 
-    background: linear-gradient(
-        135deg,
-        rgba(0, 208, 132, 0.08),
-        rgba(0, 208, 132, 0.02)
-    );
+    background: linear-gradient(135deg,
+            rgba(0, 208, 132, 0.08),
+            rgba(0, 208, 132, 0.02));
 
     border: 1px solid rgba(0, 208, 132, 0.2);
 
@@ -3692,6 +3710,7 @@ color:var(--accent-hover);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 @media (max-width: 768px) {
 
     .articles-page__card {
@@ -3729,6 +3748,7 @@ color:var(--accent-hover);
         gap: 1rem;
     }
 }
+
 /* Articles Page CSS End */
 
 
@@ -3738,10 +3758,12 @@ color:var(--accent-hover);
     margin: 0 auto;
     max-width: 1150px;
 }
+
 .article-detail-page__intro,
 .article-detail-page__section {
     margin-bottom: 3rem;
 }
+
 .article-detail-page p {
     color: var(--text-secondary);
     font-family: var(--font-body);
@@ -3749,6 +3771,7 @@ color:var(--accent-hover);
     line-height: 1.9;
     margin-bottom: 1.25rem;
 }
+
 .article-detail-page__heading {
     position: relative;
 
@@ -3760,6 +3783,7 @@ color:var(--accent-hover);
     font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 400;
 }
+
 .article-detail-page__heading::before {
     content: "";
 
@@ -3897,6 +3921,7 @@ color:var(--accent-hover);
 .article-detail-page__info-card strong {
     color: var(--primary);
 }
+
 /* Top Lists / Rankings */
 
 .article-detail-page__ranking-item {
@@ -3981,6 +4006,7 @@ color:var(--accent-hover);
         font-size: 1.4rem;
     }
 }
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
@@ -4018,7 +4044,7 @@ color:var(--accent-hover);
 /* Article Detail Page CSS End */
 
 /* Go To Top button CSS Start */
-#topBtn{
+#topBtn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -4053,7 +4079,7 @@ color:var(--accent-hover);
 }
 
 
-#topBtn.show{
+#topBtn.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
@@ -4061,7 +4087,7 @@ color:var(--accent-hover);
 }
 
 
-#topBtn:hover{
+#topBtn:hover {
     background: var(--primary-hover);
     transform: scale(1.1);
     box-shadow:
@@ -4070,7 +4096,7 @@ color:var(--accent-hover);
 }
 
 /* Pulse Ring */
-#topBtn::before{
+#topBtn::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -4079,31 +4105,102 @@ color:var(--accent-hover);
     animation: pulse 2s infinite;
 }
 
-@keyframes float{
-    0%{
+@keyframes float {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-6px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-@keyframes pulse{
-    0%{
+@keyframes pulse {
+    0% {
         transform: scale(1);
         opacity: 0.8;
     }
-    70%{
+
+    70% {
         transform: scale(1.5);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(1.5);
         opacity: 0;
     }
 }
+
 /* Go To Top button CSS End */
 
+/* Walkthrough CSS Start */
+.walkthrough_box {
+    max-width:1150px;
+    margin: 0 auto;
+}
+.walkthrough_sections_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+.walkthrough_sections {
+    margin-top: 2rem;
+    box-shadow: #149e6c 0px 3px 8px;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+
+.walkthrough_section_title {
+    color: var(--primary);
+    font-family: var(--font-heading);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+.walkthrough_list {
+    list-style: none;
+    padding: 0;
+}
+
+.walkthrough_cards {
+    margin: 0.5rem 0;
+}
+
+.walkthrough_cards a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.walkthrough_cards a:hover {
+    color: var(--primary);
+    background: var(--bg-tertiary);
+    border-color: var(--border);
+}
+
+.walkthrough_search {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.walkthrough_search:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+/* Walkthrough CSS End */
