@@ -625,11 +625,22 @@
     <script>
         document.getElementById('walkthroughSearch').addEventListener('keyup', function () {
             let filter = this.value.toLowerCase();
-            let items = document.querySelectorAll('.walkthrough_cards');
+            let sections = document.querySelectorAll('.walkthrough_sections');
 
-            items.forEach(item => {
-                let text = item.textContent.toLowerCase();
-                item.style.display = text.includes(filter) ? "" : "none";
+            sections.forEach(section => {
+                let cards = section.querySelectorAll('.walkthrough_cards');
+                let hasVisibleCards = false;
+
+                cards.forEach(card => {
+                    let text = card.textContent.toLowerCase();
+                    if (text.includes(filter)) {
+                        card.style.display = "";
+                        hasVisibleCards = true;
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+                section.style.display = hasVisibleCards ? "" : "none";
             });
         });
     </script>
