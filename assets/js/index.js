@@ -66,31 +66,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Tabs JS Start
 const tabs = document.querySelectorAll(".tab");
-const tabContents = document.querySelectorAll(".tab-content");
+const gameLists = document.querySelectorAll(".games-list");
+
+document.querySelector('.games-list[data-category="popular"]').classList.add('active');
 
 tabs.forEach(tab => {
     tab.addEventListener("click", () => {
-
-        // Remove active class from tabs
         tabs.forEach(item => item.classList.remove("active"));
-
-        // Hide all contents
-        tabContents.forEach(content =>
-            content.classList.remove("active")
-        );
-
-        // Activate current tab
         tab.classList.add("active");
+        const filter = tab.dataset.filter;
 
-        // Show matching content
-        const target = document.getElementById(
-            tab.dataset.tab
-        );
-
-        target.classList.add("active");
+        gameLists.forEach(list => {
+            if (list.dataset.category === filter) {
+                list.classList.add("active");
+            } else {
+                list.classList.remove("active");
+            }
+        });
     });
 });
 // Tabs JS End
+
 
 // Home Videos JS  Start
 const modal = document.getElementById("videoModal");

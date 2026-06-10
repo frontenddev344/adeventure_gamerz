@@ -1612,12 +1612,16 @@ span.theme {
 }
 
 
-.games-grid {
-    display: grid;
+.games-list {
+    display: none;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
+.games-list.active {
+    display: grid; 
+}
 
 .game-card {
     position: relative;
@@ -1749,13 +1753,13 @@ span.theme {
 }
 
 @media (max-width: 1200px) {
-    .games-grid {
+    .games-liost {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 992px) {
-    .games-grid {
+    .games-list {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1765,7 +1769,7 @@ span.theme {
 }
 
 @media (max-width: 768px) {
-    .games-grid {
+    .games-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1781,7 +1785,7 @@ span.theme {
 
 @media (max-width: 540px) {
 
-    .games-grid {
+    .games-list {
         grid-template-columns: 1fr;
     }
 
