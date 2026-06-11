@@ -2368,6 +2368,7 @@ video {
     border: 0.0625rem solid var(--border);
     transition: 0.35s ease;
     cursor: pointer;
+    display: block;
 }
 
 .home_guides_card:hover {
