@@ -16,8 +16,8 @@ const games = [
             "Indie pixel-art inspired visuals",
             "Puzzle and interaction-focused progression"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/Bunny.jpg",
+        image: "assets/images/Bunny.jpg",
         closingNote: "The game’s strange world design and emotional atmosphere make it a memorable experience for players who enjoy narrative-heavy indie adventures."
     },
 
@@ -35,8 +35,8 @@ const games = [
             "Calm soundtrack and immersive mood",
             "Indie narrative adventure design"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/But-That-Was.jpg",
+        image: "assets/images/But-That-Was.jpg",
         closingNote: "The game’s artistic direction and reflective tone make it stand out among experimental indie adventures, especially for players who enjoy slower-paced storytelling experiences."
     },
 
@@ -55,8 +55,8 @@ const games = [
             "Atmospheric storytelling and world-building",
             "Detailed futuristic environments and visual design"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/Observer.jpg",
+        image: "assets/images/Observer.jpg",
         closingNote: "The game stands out for its unique blend of cyberpunk themes, detective work, and psychological horror, offering a deeply immersive experience for players who enjoy narrative-driven adventures and mature storytelling."
     },
 
@@ -75,8 +75,8 @@ const games = [
             "Emotional and reflective narrative themes",
             "Immersive soundtrack and ambient audio design"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/Airwave.jpg",
+        image: "assets/images/Airwave.jpg",
         closingNote: "The game stands out through its calming atmosphere, artistic presentation, and thoughtful storytelling, making it an excellent choice for players who enjoy slow-paced, narrative-focused indie adventures."
     },
 
@@ -93,8 +93,8 @@ const games = [
             "International espionage storyline",
             "Traditional point-and-click mechanics"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/JamesBond.jpg",
+        image: "assets/images/JamesBond.jpg",
         closingNote: "Despite its age, The Stealth Affair remains a memorable retro adventure for fans of classic spy games and old-school detective experiences."
     },
 
@@ -111,8 +111,8 @@ const games = [
             "Dark supernatural storyline",
             "Classic point-and-click adventure elements"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/Silentville.jpg",
+        image: "assets/images/Silentville.jpg",
         closingNote: "The game combines suspenseful storytelling with exploration and hidden object mechanics, creating a mysterious adventure experience for fans of casual detective games."
     },
 
@@ -130,8 +130,8 @@ const games = [
             "Retro-inspired visuals and environments",
             "Suspenseful sound design and creepy atmosphere"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/Doves.png",
+        image: "assets/images/Doves.png",
         closingNote: "The game focuses heavily on tension, isolation, and environmental storytelling rather than constant action. Its dark forest environments and mysterious narrative create a deeply immersive horror experience for fans of indie psychological adventures."
     },
 
@@ -150,8 +150,8 @@ const games = [
             "Emotional themes centered on identity and self-discovery",
             "Atmospheric soundtrack and effective sound design"
         ],
-        bannerImage: "assets/images/home_walkthrough_image.png",
-        image: "assets/images/home_walkthrough_image.png",
+        bannerImage: "assets/images/Idoesn.png",
+        image: "assets/images/Idoesn.png",
         closingNote: "The game stands out as a creative evolution of classic text adventures, offering a unique blend of horror, narrative experimentation, and emotional storytelling for players seeking something unconventional."
     }
 ]
