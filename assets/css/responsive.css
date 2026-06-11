@@ -161,6 +161,9 @@
         gap: 1.25rem;
         text-align: center;
     }
+    .slot_card {
+        flex-direction: column;
+    }
 
 }
 
