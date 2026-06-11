@@ -4609,15 +4609,19 @@ div#data-footer-container h2 {
     border-radius: var(--radius-md);
     transition: var(--transition-normal);
 }
+
 .game_review_content p {
     margin-bottom: 1.25rem;
 }
+
 .overview-content.new {
     max-width: 100%;
 }
+
 .overview-content.new h4 {
     margin-bottom: 1.1rem;
 }
+
 .step-card:hover {
     background: var(--card-hover);
     border-color: var(--primary);
@@ -5303,14 +5307,17 @@ ul.features_list li {
 .game_review_boxes {
     padding: 2rem 0;
 }
+
 .game_review_header {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 .game_review_header h1 {
     color: var(--accent);
     margin-bottom: 1rem;
 }
+
 .game_review_header>p {
     max-width: 750px;
     margin: 0 auto;
@@ -5318,6 +5325,7 @@ ul.features_list li {
     line-height: 1.8;
     font-size: 1.05rem;
 }
+
 .game_meta {
     margin: 3rem auto 2rem;
     padding: 1.5rem 2rem;
@@ -5333,6 +5341,7 @@ ul.features_list li {
 
     box-shadow: var(--shadow-sm);
 }
+
 .author_info {
     display: flex;
     align-items: center;
@@ -5353,12 +5362,14 @@ ul.features_list li {
 
     box-shadow: var(--shadow-glow);
 }
+
 .author_details h6 {
     margin: 0;
     color: var(--text-primary);
     font-size: 1rem;
     font-weight: 700;
 }
+
 .game_date {
     display: flex;
     align-items: center;
@@ -5367,6 +5378,7 @@ ul.features_list li {
     color: var(--text-secondary);
     font-size: 0.95rem;
 }
+
 .game_intro {
     max-width: 1100px;
     margin: 0 auto 3rem;
@@ -5381,9 +5393,11 @@ ul.features_list li {
 
     text-align: left;
 }
+
 .game_date svg {
     color: var(--primary);
 }
+
 .author_details span {
     display: block;
     margin-top: 4px;
@@ -5391,6 +5405,7 @@ ul.features_list li {
     color: var(--text-muted);
     font-size: 0.875rem;
 }
+
 .game_review_overview {
     color: var(--text-secondary);
     line-height: 1.8;
@@ -5556,11 +5571,13 @@ ul.features_list li {
     align-items: center;
     justify-content: center;
 }
+
 .game_review_grid {
     gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
 }
+
 @media (max-width: 767px) {
     .main_slider img {
         height: 300px;
@@ -5569,6 +5586,7 @@ ul.features_list li {
     .thumb {
         height: 70px;
     }
+
     .game_meta {
         flex-direction: column;
         align-items: flex-start;
@@ -5658,3 +5676,64 @@ ul.features_list li {
 }
 
 /* Games Description Page CSS End */
+
+
+
+/* Cookies CSS Start */
+.cookie-alert {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 320px;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    border: 3px solid var(--accent-hover);
+    border-radius: 1.875rem;
+    background: #0a0a0a;
+}
+
+.cookie-alert .butn {
+    background: var(--accent);
+    color: #000;
+    font-weight: 600;
+}
+
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookie-alert .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.cookie-alert .card-text {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cookie-alert .card-text a {
+    color: var(--accent-hover);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.btn-toolbar .butn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9375rem;
+}
+
+.btn-toolbar .butn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Cookies CSS End */
