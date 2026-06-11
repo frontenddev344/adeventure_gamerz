@@ -464,7 +464,8 @@ span.theme {
     visibility: hidden;
     transform: translateY(10px);
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
-    z-index: 90;
+    z-index: 99;
+    height: 100%;
 }
 
 .nav-item-wrapper:hover .mega-menu-dropdown {
