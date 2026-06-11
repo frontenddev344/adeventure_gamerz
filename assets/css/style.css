@@ -5352,6 +5352,10 @@ ul.features_list li {
     max-width: 1100px;
     margin: 0 auto;
 }
+.game_review_content.new {
+    width: 100%;
+    max-width: 100%;
+}
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .game_review_header h1 {
