@@ -479,7 +479,7 @@ span.theme {
     padding: 40px 60px;
     display: grid;
     /* grid-template-columns: 1fr 1fr 2fr; */
-    grid-template-columns: 1fr  2fr;
+    grid-template-columns: 1fr 2fr;
     gap: 48px;
 }
 
@@ -5107,7 +5107,8 @@ ul.features_list li {
     padding: 2.5rem;
     background: var(--card);
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--primary); /* Emerald accent */
+    border-left: 4px solid var(--primary);
+    /* Emerald accent */
     text-align: left;
 }
 
@@ -5116,7 +5117,77 @@ ul.features_list li {
     margin-bottom: 0;
     font-style: italic;
 }
-.about-hero p ,.evolution-box p , .methodology-card p{
+
+.about-hero p,
+.evolution-box p,
+.methodology-card p {
     line-height: 1.7;
 }
+
 /* About Page CSS Start */
+
+
+/* Footer Pages CSS Start */
+.last-update {
+    padding: 0 0 2.5rem 0;
+}
+
+
+.last-update-content:not(:last-child) {
+    margin-bottom: 1.875rem;
+}
+
+.last-update-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.last-update-content h4,
+.last-update-content h3,
+.last-update-content h2 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    margin-bottom: 0.9375rem;
+}
+
+.last-update-content ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #fff;
+    position: relative;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+}
+
+.last-update-content ul li::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--accent-hover);
+    position: absolute;
+    left: 0;
+    top: 0.625rem;
+    border-radius: 50%;
+}
+
+.last-update-content-wrap {
+    background: #141719;
+    padding: 1.875rem;
+    border-radius: 0.75rem;
+}
+
+.last-update-content p a {
+    color: #eb592a;
+}
+
+.last-update-content p a:hover {
+    color: #fff;
+}
+
+/* Footer  Pages CSS Start */
