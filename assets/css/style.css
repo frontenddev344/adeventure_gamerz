@@ -3018,6 +3018,10 @@ video {
     background: var(--surface-active);
 }
 
+.news_card .card-img img {
+height: 100%;
+}
+
 .news_card .card-body {
     padding: 24px;
 }
@@ -4541,15 +4545,184 @@ div#data-footer-container h2 {
     height: 2.5rem;
 }
 
-.card-title {
+.casino_games_card .card-title {
     padding: 15px 0 5px 0;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .hidden {
     display: none;
 }
+.guide-section {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 80px 20px;
+    font-family: var(--font-body);
+}
 
+.guide-container {
+    margin: 0 auto;
+}
+
+.guide-title {
+    font-family: var(--font-heading);
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.guide-intro {
+    color: var(--text-secondary);
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.step-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    transition: var(--transition-normal);
+}
+
+.step-card:hover {
+    background: var(--card-hover);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-primary);
+}
+
+.step-number {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.step-card h3 {
+    margin: 0 0 10px 0;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.step-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.guide-footer {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.guide-footer strong {
+    color: var(--primary);
+}
+
+
+.slots-container {
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.slot-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.slot-card:hover {
+    background: var(--card-hover);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-primary);
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #202020;
+}
+
+.card-content { padding: 20px; }
+
+.card-content h3 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+
+.card-content p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-disabled);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.stat-value {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .section-title { font-size: 1.8rem; }
+}
+
+@media (max-width: 768px) {
+    .guide-title { font-size: 2rem; }
+}
 @media (max-width: 768px) {
     .casino_page_intro_meta {
         flex-direction: column;
