@@ -478,7 +478,8 @@ span.theme {
     margin: 0 auto;
     padding: 40px 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    /* grid-template-columns: 1fr 1fr 2fr; */
+    grid-template-columns: 1fr  2fr;
     gap: 48px;
 }
 
