@@ -64,6 +64,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Header JS End
 
+// Go To Top JS Start
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 800) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+});
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+// Go To Top JS End
+
 // Tabs JS Start
 const tabs = document.querySelectorAll(".tab");
 const gameLists = document.querySelectorAll(".games-list");
@@ -143,22 +162,5 @@ function filterCards(category, btn) {
 
 // News Filter JS End
 
-// Go To Top JS Start
-const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 800) {
-    topBtn.classList.add("show");
-  } else {
-    topBtn.classList.remove("show");
-  }
-});
-
-topBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-// Go To Top JS End
 
