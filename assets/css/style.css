@@ -3019,7 +3019,7 @@ video {
 }
 
 .news_card .card-img img {
-height: 100%;
+    height: 100%;
 }
 
 .news_card .card-body {
@@ -4554,6 +4554,7 @@ div#data-footer-container h2 {
 .hidden {
     display: none;
 }
+
 .guide-section {
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -4672,7 +4673,9 @@ div#data-footer-container h2 {
     background: #202020;
 }
 
-.card-content { padding: 20px; }
+.card-content {
+    padding: 20px;
+}
 
 .card-content h3 {
     color: var(--text-primary);
@@ -4716,12 +4719,17 @@ div#data-footer-container h2 {
 
 /* Responsive adjustment */
 @media (max-width: 600px) {
-    .section-title { font-size: 1.8rem; }
+    .section-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .guide-title { font-size: 2rem; }
+    .guide-title {
+        font-size: 2rem;
+    }
 }
+
 @media (max-width: 768px) {
     .casino_page_intro_meta {
         flex-direction: column;
@@ -4748,24 +4756,24 @@ div#data-footer-container h2 {
 
 .slot_intro_sec {
     border-bottom: 1px solid var(--border);
-  }
+}
 
-  
-  .slot_intro_title {
+
+.slot_intro_title {
     font-family: var(--font-heading);
     font-size: 3rem;
     margin-bottom: 1.5rem;
     color: var(--white);
-  }
-  
-  .slot_intro_author {
+}
+
+.slot_intro_author {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
-  }
-  
-  .slot_intro_avatar {
+}
+
+.slot_intro_avatar {
     width: 40px;
     height: 40px;
     background: var(--primary);
@@ -4775,46 +4783,47 @@ div#data-footer-container h2 {
     justify-content: center;
     border-radius: 50%;
     font-weight: bold;
-  }
-  
-  .slot_intro_meta {
+}
+
+.slot_intro_meta {
     display: flex;
     flex-direction: column;
-  }
-  
-  .slot_intro_name {
+}
+
+.slot_intro_name {
     font-weight: 600;
     color: var(--text-primary);
-  }
-  
-  .slot_intro_date {
+}
+
+.slot_intro_date {
     font-size: 0.85rem;
     color: var(--text-muted);
-  }
-  
-  .slot_intro_body {
+}
+
+.slot_intro_body {
     font-family: var(--font-body);
     line-height: 1.7;
     color: var(--text-secondary);
     font-size: 1.1rem;
-  }
-  
-  .slot_intro_body strong {
+}
+
+.slot_intro_body strong {
     color: var(--primary);
-  }
-  
-  .slot_intro_body p {
+}
+
+.slot_intro_body p {
     margin-bottom: 1.25rem;
-  }
-  .slot_list_container {
+}
+
+.slot_list_container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     max-width: 1100px;
     margin: 2rem auto;
-  }
-  
-  .slot_card {
+}
+
+.slot_card {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
@@ -4824,46 +4833,48 @@ div#data-footer-container h2 {
     transition: var(--transition-normal);
     position: relative;
     margin-bottom: 1.25rem;
-  }
-  
-  .slot_card:hover {
+}
+
+.slot_card:hover {
     border-color: var(--primary);
     box-shadow: var(--shadow-primary);
-  }
-  
-  .card_rank {
+}
+
+.card_rank {
     font-family: var(--font-heading);
     font-size: 2rem;
     color: var(--primary);
     font-weight: 500;
     min-width: 20px;
 }
+
 ul.features_list li {
     line-height: 1.2;
     margin-bottom: 0.6rem;
 }
-  .card_content {
+
+.card_content {
     display: grid;
     grid-template-columns: 150px 1fr 200px;
     align-items: center;
     gap: 1rem;
     width: 100%;
-  }
-  
-  .offer_title {
+}
+
+.offer_title {
     color: var(--white);
     margin-bottom: 0.5rem;
-  }
-  
-  .features_list {
+}
+
+.features_list {
     list-style: none;
     padding: 0;
     margin: 0;
     color: var(--text-secondary);
     font-size: 0.9rem;
-  }
-  
-  .btn_primary {
+}
+
+.btn_primary {
     background: var(--primary);
     color: var(--text-inverse);
     padding: 0.8rem 1.5rem;
@@ -4873,148 +4884,237 @@ ul.features_list li {
     cursor: pointer;
     width: 100%;
     margin-bottom: 0.5rem;
-  }
-  
-  .btn_primary:hover {
+}
+
+.btn_primary:hover {
     background: var(--primary-hover);
-  }
-  
-  .rating_box {
+}
+
+.rating_box {
     text-align: center;
     color: var(--primary);
     font-weight: 600;
-  }
-  
-  
-  .slot_table_container {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  .slot_intro_container {
+}
+
+
+.slot_table_container {
     max-width: 1100px;
     margin: 0 auto;
 }
-  .slot_table_title {
+
+.slot_intro_container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.slot_table_title {
     color: var(--white);
     font-family: var(--font-heading);
     margin-bottom: 2rem;
-  }
-  
-  .slot_table_wrapper {
+}
+
+.slot_table_wrapper {
     overflow-x: auto;
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
     background: var(--card);
     /* Added specific height/width handling */
     width: 100%;
-  }
-  
-  .slot_data_table {
+}
+
+.slot_data_table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 600px; /* Ensures scroll on mobile */
-  }
-  
-  .slot_data_table thead {
+    min-width: 600px;
+    /* Ensures scroll on mobile */
+}
+
+.slot_data_table thead {
     background: var(--bg-secondary);
-  }
-  
-  .slot_data_table th {
+}
+
+.slot_data_table th {
     text-align: left;
     padding: 1.25rem;
     color: var(--white);
     font-size: 0.85rem;
     text-transform: uppercase;
     border-bottom: 2px solid var(--border-strong);
-  }
-  
-  .slot_data_table td {
+}
+
+.slot_data_table td {
     padding: 1.1rem 1.25rem;
     color: var(--text-secondary);
     border-bottom: 1px solid var(--border);
-  }
-  
-  .slot_data_table tbody tr:hover {
+}
+
+.slot_data_table tbody tr:hover {
     background: var(--card-hover);
-  }
-  
-  /* Elegant scrollbar */
-  .slot_table_wrapper::-webkit-scrollbar {
+}
+
+/* Elegant scrollbar */
+.slot_table_wrapper::-webkit-scrollbar {
     height: 6px;
-  }
-  
-  .slot_table_wrapper::-webkit-scrollbar-thumb {
+}
+
+.slot_table_wrapper::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 10px;
-  }
+}
 
-  .slot_strategy_sec {
+.slot_strategy_sec {
     background: var(--bg-secondary);
     padding: 4rem 1rem;
     border-top: 1px solid var(--border);
-  }
-  
-  .slot_strategy_container {
+}
+
+.slot_strategy_container {
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .slot_strategy_title {
+}
+
+.slot_strategy_title {
     color: var(--white);
     font-family: var(--font-heading);
     text-align: center;
     margin-bottom: 1rem;
-  }
-  
-  .slot_strategy_intro {
+}
+
+.slot_strategy_intro {
     text-align: center;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto 3rem;
-  }
-  
-  .strategy_grid {
+}
+
+.strategy_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
-  }
-  
-  .strategy_card {
+}
+
+.strategy_card {
     background: var(--card);
     padding: 2rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
     transition: var(--transition-normal);
-  }
-  
-  .strategy_card:hover {
+}
+
+.strategy_card:hover {
     border-color: var(--primary);
     background: var(--card-hover);
     transform: translateY(-5px);
-  }
-  
-  .strategy_icon {
+}
+
+.strategy_icon {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     color: var(--primary);
     margin-bottom: 1rem;
     font-weight: 800;
-  }
-  
-  .strategy_card h3 {
+}
+
+.strategy_card h3 {
     color: var(--white);
     margin-bottom: 0.75rem;
-  }
-  
-  .strategy_card p {
+}
+
+.strategy_card p {
     color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .card_content {
-      grid-template-columns: 1fr;
-      text-align: center;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-  }
-  /* Slot Page CSS End */
+}
+
+/* Slot Page CSS End */
+
+
+/* About Page CSS Start */
+.gametrail_about {
+    background: var(--bg-primary);
+    color: var(--text-muted);
+}
+
+.about-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+}
+
+.evolution-box {
+    background: var(--card);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    margin: 20px 0;
+}
+
+.evolution-box h2 {
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.methodology-card {
+    background: var(--card);
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: var(--transition-normal);
+}
+
+.methodology-card:hover {
+    border-color: var(--primary);
+}
+
+.methodology-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.passion_content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.passion_content h2 {
+    font-family: var(--font-heading);
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.passion_content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.bridge_box {
+    padding: 2.5rem;
+    background: var(--card);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary); /* Emerald accent */
+    text-align: left;
+}
+
+.bridge_box p {
+    color: var(--white);
+    margin-bottom: 0;
+    font-style: italic;
+}
+.about-hero p ,.evolution-box p , .methodology-card p{
+    line-height: 1.7;
+}
+/* About Page CSS Start */
