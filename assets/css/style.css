@@ -454,7 +454,7 @@ span.theme {
 
 .mega-menu-dropdown {
     position: fixed;
-    top: 85px;
+    top: 125px;
     left: 0;
     width: 100vw;
     background-color: var(--bg-secondary);
@@ -4267,7 +4267,13 @@ div#data-footer-container h2 {
     grid-template-columns: 280px 1fr;
     gap: 4rem;
 }
+.hero-banner-section.sub_banner .hero-map-card.small {
 
+    min-height: 30rem;
+    background-size: contain;
+    max-width: 60%;
+    margin: 0 auto;
+}
 .walkthrough_details_sidebar {
     position: sticky;
     top: 2rem;
