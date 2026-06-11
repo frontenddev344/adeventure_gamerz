@@ -3026,6 +3026,8 @@ video {
     overflow: hidden;
     transition: var(--transition-normal);
     box-shadow: rgba(105, 105, 105, 0.24) 0px 3px 8px;
+    display: block;
+    margin-bottom: 20px;
     height: 100%;
 }
 
