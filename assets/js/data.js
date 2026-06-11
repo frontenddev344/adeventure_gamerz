@@ -199,7 +199,7 @@ const news_articles = [
         title: "Everything Coming to Shadow Wasteland From July to October Updates",
         image: "assets/images/home_walkthrough_image.png",
         categoryLabel: "News",
-        author: "Priya Mehta",
+        author: "Lisa Rose",
         date: "02 June 2026",
         readTime: "5 min",
         platform: "PC, PlayStation, Xbox",
