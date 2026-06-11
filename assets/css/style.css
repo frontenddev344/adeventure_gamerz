@@ -4609,11 +4609,18 @@ div#data-footer-container h2 {
     border-radius: var(--radius-md);
     transition: var(--transition-normal);
 }
-
+.game_review_content p {
+    margin-bottom: 1.25rem;
+}
+.overview-content.new {
+    max-width: 100%;
+}
+.overview-content.new h4 {
+    margin-bottom: 1.1rem;
+}
 .step-card:hover {
     background: var(--card-hover);
     border-color: var(--primary);
-    transform: translateY(-5px);
     box-shadow: var(--shadow-primary);
 }
 
@@ -5549,6 +5556,11 @@ ul.features_list li {
     align-items: center;
     justify-content: center;
 }
+.game_review_grid {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 @media (max-width: 767px) {
     .main_slider img {
         height: 300px;
@@ -5611,6 +5623,7 @@ ul.features_list li {
     /* Stack cards better on very small screens */
     .game_review_grid {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .step-card {
