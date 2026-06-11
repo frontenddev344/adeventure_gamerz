@@ -166,7 +166,7 @@ const news_articles = [
     {
         slug: "reputation-system-roadrush-5",
         title: "How the Reputation System Shapes Your Gameplay in RoadRush Legends 5",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/road_rush_legend_5.jpg",
         categoryLabel: "Game Guide",
         author: "Alex Turner",
         date: "04 June 2026",
@@ -197,7 +197,7 @@ const news_articles = [
     {
         slug: "shadow-wasteland-roadmap-2026",
         title: "Everything Coming to Shadow Wasteland From July to October Updates",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/everything_coming_to_shadow.webp",
         categoryLabel: "News",
         author: "Lisa Rose",
         date: "02 June 2026",
@@ -261,7 +261,7 @@ const news_articles = [
     {
         slug: "inventory-trading-roadrush-5",
         title: "How to Clear Inventory Space by Trading Vehicles in RoadRush Legends 5",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/inventory_roadrush_legend.jpg",
         categoryLabel: "Game Guide",
         author: "Alex Turner",
         date: "01 June 2026",
@@ -295,7 +295,7 @@ const news_articles = [
     {
         slug: "mega-strike-soccer-wild-card",
         title: "Mega Strike Soccer Showdown Launches Wild Card Mode With 8,000x Max Win",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/mega_strike.webp",
         categoryLabel: "News",
         author: "Alex Turner",
         date: "29 May 2026",
@@ -338,7 +338,7 @@ const news_articles = [
     {
         slug: "echo-forgotten-vale-completion-time",
         title: "Here's Exactly How Long It Takes to Finish Echo of the Forgotten Vale",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/echo_of_the_forgotten.jpg",
         categoryLabel: "Game Guide",
         author: "Alex Turner",
         date: "29 May 2026",
@@ -379,7 +379,7 @@ const news_articles = [
     {
         slug: "agent-zero-vault-codes",
         title: "Looking for a Shortcut? Here Are All the Vault Codes in Agent Zero: First Strike",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/shortcut.jpg",
         categoryLabel: "Game Guide",
         author: "Alex Turner",
         date: "28 May 2026",
@@ -418,7 +418,7 @@ const news_articles = [
     {
         slug: "agent-zero-voice-cast",
         title: "Meet the Voice Cast Behind Agent Zero: First Strike and the Characters They Play",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/characters_play.jpg",
         categoryLabel: "News",
         author: "Alex Turner",
         date: "27 May 2026",
@@ -448,7 +448,7 @@ const news_articles = [
     {
         slug: "agent-zero-mission-list",
         title: "How Many Missions Does Agent Zero: First Strike Have? Full Mission List Inside",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/Agent-Zero.jpg",
         categoryLabel: "Game Guide",
         author: "Alex Turner",
         date: "27 May 2026",
@@ -477,7 +477,7 @@ const news_articles = [
     {
         slug: "thunder-axe-3-loot-update",
         title: "Thunder Axe 3 Launches With Expanded Loot Tiers and New Bonus Rounds",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/ThunderAxe.jpg",
         categoryLabel: "News",
         author: "Alex Turner",
         date: "26 May 2026",
@@ -516,7 +516,7 @@ const news_articles = [
     {
         slug: "agent-zero-launch-times",
         title: "Ready to Dive In? Here Are the Global Launch Times for Agent Zero: First Strike",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/agent_zero_first.jpg",
         categoryLabel: "News",
         author: "Alex Turner",
         date: "26 May 2026",
@@ -542,7 +542,7 @@ const news_articles = [
     {
         slug: "olympus-reborn-3-reveal",
         title: "StormForge Studios Brings Zeus’s Fury Back in Olympus Reborn III",
-        image: "assets/images/home_walkthrough_image.png",
+        image: "assets/images/Global-Launch-Times.jpg",
         categoryLabel: "News",
         author: "Alex Turner",
         date: "22 May 2026",
