@@ -1404,6 +1404,7 @@ span.theme {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
 }
 
 .home_walkthrough_card:hover {
@@ -1436,6 +1437,7 @@ span.theme {
     height: 100%;
     overflow: hidden;
     transition: 0.1s all linear;
+    display: block;
 }
 
 .featured_card:hover {
@@ -1478,7 +1480,11 @@ span.theme {
     overflow: hidden;
     border-radius: 1.875rem;
 }
-
+.featured_card_content h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: var(--white);
+}
 .featured_card_img {
     height: 100%;
     width: 100%;
@@ -1634,6 +1640,7 @@ span.theme {
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .game-card:hover {
@@ -2835,13 +2842,16 @@ video {
         repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
-
+ .rating {
+    color: #ffc83d;
+}
 .game-card {
     position: relative;
     height: 340px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--shadow-glow);
+    display: block;
 }
 
 .game-card img {
