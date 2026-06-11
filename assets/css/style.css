@@ -1491,6 +1491,8 @@ span.theme {
 .featured_card_img {
     height: 100%;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .featured_card_content {
@@ -2673,6 +2675,14 @@ video {
     border-top: 0.0625rem solid var(--accent-hover);
     padding-top: 2.1875rem;
     margin-top: 2.1875rem;
+}
+.footer-contact p  a {
+    color: var(--white);
+    transition: 0.1s all ease-in-out;
+}
+.footer-contact p  a:hover {
+    color: var(--accent-hover);
+
 }
 
 .footer-bottom p {
