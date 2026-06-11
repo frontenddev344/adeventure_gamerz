@@ -4631,9 +4631,12 @@ div#data-footer-container h2 {
 }
 
 .step-card p {
-    color: var(--text-muted);
+    color: var(--white);
     font-size: 0.95rem;
     line-height: 1.6;
+}
+.text-secondary{
+    color:#fff !important;
 }
 
 .guide-footer {
@@ -5229,9 +5232,9 @@ ul.features_list li {
     border-radius: 16px;
 }
 
-/* Updated Game Review Styling */
-.game_review_content {
-    padding-bottom: 50px;
+
+.overview-content p {
+    line-height: 1.5;
 }
 
 .game_review_content .stats-table {
@@ -5242,10 +5245,13 @@ ul.features_list li {
     max-width: 1100px;
     margin: 0 auto;
 }
-.overview-content ,.how-to-play {
+
+.overview-content,
+.how-to-play {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 .game_review_content .stats-table table {
     width: 100%;
     color: var(--text-secondary);
@@ -5283,6 +5289,96 @@ ul.features_list li {
 .game_review_content .text-primary {
     color: var(--primary);
 }
+
+/* Updated Walkthrough Page Styling */
+.game_review_boxes {
+    padding: 2rem 0;
+}
+
+.game_review_header h1 {
+    color: var(--primary);
+    font-family: var(--font-heading);
+}
+
+.game_review_overview {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.section_heading {
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.game_review_nav {
+    background: var(--card);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.review_nav_links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav_box_item {
+    display: block;
+    padding: 15px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-light);
+    transition: var(--transition-normal);
+}
+
+.nav_box_item:hover {
+    background: var(--surface-hover);
+    color: var(--primary);
+    padding-left: 25px;
+}
+
+.nav_box_item span {
+    margin-right: 15px;
+}
+.game_review_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game_review_overview , .game_review_nav , .game_review_content ,.game_review_header.py-5 {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .game_review_header h1 {
+        font-size: 1.8rem;
+    }
+    .game_review_boxes {
+        padding: 40px 0;
+    }
+
+    .game_review_header h1 {
+        font-size: 1.6rem; /* Smaller heading for mobile */
+    }
+
+    .section_heading {
+        font-size: 1.4rem;
+    }
+
+    /* Stack cards better on very small screens */
+    .game_review_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step-card {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+}
+
 @media (max-width: 768px) {
     .game_review_content .game-header h1 {
         font-size: 1.8rem;
@@ -5291,19 +5387,21 @@ ul.features_list li {
     .game_review_content .stats-table {
         padding: 15px;
     }
-    
+
     .game_review_content .step-card {
         padding: 20px;
     }
+
     .bonanaza-inner h2 {
         font-size: 2rem;
 
     }
 }
 
-@media screen and (max-width:575px){
+@media screen and (max-width:575px) {
     .bonanaza-video iframe {
         height: 230px;
     }
 }
+
 /* Games Description Page CSS End */
