@@ -2060,13 +2060,11 @@ video {
 .home_latest_games_card {
     position: relative;
     height: 260px;
-
     border-radius: 14px;
     overflow: hidden;
-
     background: var(--card);
     border: 1px solid var(--border);
-
+    display: block;
     transition: .3s ease;
 }
 
