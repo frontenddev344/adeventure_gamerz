@@ -23,13 +23,7 @@
         display: flex;
     }
 
-    .nav-container {
-        height: 70px;
-    }
 
-    .brand-logo img {
-        max-height: 42px;
-    }
 
     .hero-map-card {
         grid-template-columns: 1fr;
@@ -129,7 +123,9 @@
     html {
         font-size: 14px;
     }
-
+    .brand-logo img {
+        max-width: 120px;
+    }
     .custom-news-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -210,9 +206,7 @@
     .filters-grid {
         grid-template-columns: repeat(2,1fr);
     }
-    .brand-logo img {
-        max-height: 35px;
-    }
+
     .hero-title {
         font-size: 2rem;
     }
