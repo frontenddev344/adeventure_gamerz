@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const gameSlug = params.get('game');
     const articleSlug = params.get('article');
-    
+    const heroTitle = document.querySelector('.hero-title');
     // Selectors
     const metaContainer = document.getElementById('meta-container');
     const container = document.getElementById('details-container');
