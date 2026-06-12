@@ -225,6 +225,11 @@
     .walkthorugh_details_box .highlighted_text {
         line-height: 1.7;
     }
+    .hero-banner-section.sub_banner .hero-map-card.small {
+        max-width: 100%;
+        margin: 0 auto;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width:480px) {
