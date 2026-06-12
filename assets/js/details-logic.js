@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const metaContainer = document.getElementById('meta-container');
     const container = document.getElementById('details-container');
     const pageTitle = document.getElementById('page-main-title');
-    const banner = document.querySelector('.hero-banner-section'); 
+    const banner = document.querySelector('.hero-map-card');
     const bodyContainer = document.getElementById('article-body-container');
     const footerData = document.getElementById('data-footer-container');
 
@@ -65,10 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // B. Banner
             if (banner) {
-                banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${article.image}')`;
+                banner.style.backgroundImage = `url('${article.image}')`;
                 banner.style.backgroundSize = 'cover';
                 banner.style.backgroundPosition = 'center';
-                banner.style.minHeight = '300px';
+                // banner.style.minHeight = '300px';
             }
 
             // C. Titles

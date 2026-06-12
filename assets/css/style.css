@@ -891,7 +891,6 @@ span.theme {
 .hero-map-card {
     width: 100%;
     min-height: 35rem;
-    background-image: url('../images/home_banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2983,8 +2982,27 @@ video {
 .news_articles_sec {
     width: 100%;
 }
-
-
+.hero-banner-section.sub_banner.news_banner .hero-map-card {
+    min-height: 30rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+ .news_content h1 {
+max-width: 80%;
+margin: 0 auto;
+}
+.article-content ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+    margin-bottom: .625rem;
+}
+.article-content ul li::marker {
+color: var(--accent);
+}
+div#article-body-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
 .filter-nav {
     margin-bottom: 40px;
     display: flex;
@@ -3100,10 +3118,12 @@ video {
     margin-bottom: 10px;
     display: flex;
     border: 1px solid #888;
-    width: fit-content;
     gap: 20px;
     padding: 0.625rem 1rem;
     border-radius: 1.25rem;
+    max-width: 80%;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 /* Ensure the banner image is below the meta */
