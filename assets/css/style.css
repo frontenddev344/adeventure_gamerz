@@ -1131,6 +1131,7 @@ span.theme {
 
 .grid-item-featured {
     grid-column: span 2;
+    display: block;
 }
 
 
