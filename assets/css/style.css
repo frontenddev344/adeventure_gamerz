@@ -514,7 +514,7 @@ span.theme {
     gap: 16px;
 }
 
-.popular-card {
+.mega-column .popular-card {
     display: flex;
     background-color: var(--card);
     border: 1px solid var(--border-light);
@@ -4920,6 +4920,8 @@ div#data-footer-container h2 {
     color: var(--primary);
     font-weight: 500;
     min-width: 20px;
+    display: flex;
+    align-items: center;
 }
 
 ul.features_list li {
