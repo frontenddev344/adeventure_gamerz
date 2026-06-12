@@ -35,7 +35,7 @@ const games = [
             "Calm soundtrack and immersive mood",
             "Indie narrative adventure design"
         ],
-        bannerImage: "assets/But-That-Was.jpg",
+        bannerImage:"assets/images/But-That-Was.jpg",
         image: "assets/images/But-That-Was.jpg",
         closingNote: "The game’s artistic direction and reflective tone make it stand out among experimental indie adventures, especially for players who enjoy slower-paced storytelling experiences."
     },

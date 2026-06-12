@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.title = game.title;
         if (heroTitle) heroTitle.innerText = game.title;
         if (banner) {
-            const bgSource = game.bannerImage || game.image || "#000";
-            banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${bgSource}')`;
+            const bgSource = game.bannerImage || game.image;
+            banner.style.backgroundImage = `url('${bgSource}')`;
             banner.style.backgroundSize = 'cover';
             banner.style.backgroundPosition = 'center';
         }
